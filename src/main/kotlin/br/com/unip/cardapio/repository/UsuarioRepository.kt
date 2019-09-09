@@ -24,7 +24,7 @@ class UsuarioRepository(val em: EntityManager) : IUsuarioRepository {
         return Usuario(username = domain.username,
                 password = BCryptPasswordEncoder().encode(domain.password),
                 uuid = UUID.randomUUID().toString(),
-                uuidPessoa = domain.uuidPessoa,
+                pessoaId = 1L,
                 ativo = domain.ativo
         )
     }
