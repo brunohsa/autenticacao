@@ -1,35 +1,36 @@
 --liquibase formatted sql
 --changeset bruno:AUT-002-00
 
-CREATE TABLE permissao (
+CREATE TABLE Permissao (
     id int NOT NULL AUTO_INCREMENT,
-    nome varchar(100),
-    PRIMARY KEY (id)
-);
-
-CREATE TABLE perfil (
-    id int NOT NULL AUTO_INCREMENT,
-    nome varchar(80),
+    nome varchar(100) NOT NULL UNIQUE,
     descricao varchar(255),
     PRIMARY KEY (id)
 );
 
-CREATE TABLE usuario (
+CREATE TABLE Perfil (
     id int NOT NULL AUTO_INCREMENT,
-    username varchar(20),
-    password varchar(80),
-    uuid varchar(40),
-    ativo tinyint(1),
-    pessoa_id int,
+    nome varchar(80) NOT NULL UNIQUE,
+    descricao varchar(255),
     PRIMARY KEY (id)
 );
 
-CREATE TABLE perfil_permissoes (
+CREATE TABLE Usuario (
+    id int NOT NULL AUTO_INCREMENT,
+    email varchar(60) NOT NULL UNIQUE,
+    uuid varchar(40) NOT NULL UNIQUE,
+    situacao varchar(30),
+    pessoa_id int,
+    firebase_id varchar(60),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Perfil_Permissoes (
     perfil_id int,
     permissao_id int
 );
 
-CREATE TABLE usuario_perfis (
+CREATE TABLE Usuario_Perfis (
     usuario_id int,
     perfil_id int
 );

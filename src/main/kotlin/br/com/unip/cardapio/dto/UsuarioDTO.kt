@@ -3,26 +3,27 @@ package br.com.unip.cardapio.dto
 class UsuarioDTO {
 
     var id: Long? = null
-    val username: String
-    val password: String
-    val ativo: Boolean
-    var uuidPessoa: String = ""
+    val email: String
+    var senha: String? = null
+    var pessoa: IPessoaDTO? = null
+
+    constructor(email: String,
+                senha: String?,
+                pessoa: IPessoaDTO) {
+        this.email = email
+        this.senha = senha
+        this.pessoa = pessoa
+    }
 
     constructor(id: Long,
-                username: String,
-                password: String,
-                ativo: Boolean) : this(username, password, "", ativo) {
+                email: String,
+                senha: String) {
         this.id = id
+        this.senha = senha
+        this.email = email
     }
 
-    constructor(username: String,
-                password: String,
-                uuidPessoa: String,
-                ativo: Boolean) {
-        this.username = username
-        this.password = password
-        this.ativo = ativo
-        this.uuidPessoa = uuidPessoa
+    constructor(email: String) {
+        this.email = email
     }
-
 }
