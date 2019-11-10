@@ -20,7 +20,7 @@ CREATE TABLE Usuario (
     email varchar(60) NOT NULL UNIQUE,
     uuid varchar(40) NOT NULL UNIQUE,
     situacao varchar(30),
-    pessoa_id int,
+    cadastro_uuid varchar(40),
     firebase_id varchar(60),
     PRIMARY KEY (id)
 );

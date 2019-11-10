@@ -15,16 +15,22 @@ class UsuarioRepositoryBean(val em: EntityManager, val perfilRepository: IPerfil
 
     @Transactional
     override fun criar(domain: UsuarioDomain) {
-        val entity = toEntity(domain)
+        val entity = toEntity(domain, null)
         em.persist(entity)
     }
 
-    private fun toEntity(domain: UsuarioDomain): Usuario {
+    @Transactional
+    override fun criar(domain: UsuarioDomain, cadastroUuid: String) {
+        val entity = toEntity(domain, cadastroUuid)
+        em.persist(entity)
+    }
+
+    private fun toEntity(domain: UsuarioDomain, cadastroUuid: String?): Usuario {
         val perfis = perfilRepository.buscarPorNomes(domain.perfis)
         return Usuario(
                 email = domain.email.get(),
                 uuid = UUID.randomUUID().toString(),
-                pessoaId = 1L,
+                cadastroUuid = cadastroUuid,
                 situacao = domain.situacao,
                 perfis = perfis
         )

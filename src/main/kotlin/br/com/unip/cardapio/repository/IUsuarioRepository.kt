@@ -12,6 +12,8 @@ interface IUsuarioRepository {
 
     fun buscarPermissoes(email: String): List<PermissaoDTO>
 
+    fun criar(domain : UsuarioDomain, cadastroUuid : String)
+
     fun criar(domain : UsuarioDomain)
 
     fun usuarioCadastrado(email : String) : Boolean

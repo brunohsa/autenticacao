@@ -21,5 +21,5 @@ class Usuario(@Id @GeneratedValue(strategy = GenerationType.AUTO) val id: Long? 
                       joinColumns = [JoinColumn(name = "usuario_id")],
                       inverseJoinColumns = [JoinColumn(name = "perfil_id")]) val perfis: List<Perfil> = emptyList(),
               @Column(unique = true) val uuid: String,
-              @Column(name = "pessoa_id") val pessoaId: Long?,
+              @Column(name = "cadastro_uuid") val cadastroUuid: String?,
               @Column @Enumerated(EnumType.STRING) val situacao: ESituacaoUsuario)

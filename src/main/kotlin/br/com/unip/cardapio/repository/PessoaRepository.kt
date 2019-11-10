@@ -9,10 +9,10 @@ import org.springframework.stereotype.Repository
 class PessoaRepository(val restService: IRestService) : IPessoaRepository {
 
     override fun cadastrar(dto: PessoaFisicaDTO): String {
-        return restService.post("http://localhost:8082/cadastro/api/pessoa-fisica/cadastrar", dto)
+        return restService.post("http://localhost:8082/cadastro/api/v1/cadastros/pessoa-fisica", dto)
     }
 
     override fun cadastrar(dto: PessoaJuridicaDTO): String {
-        return restService.post("http://localhost:8082/cadastro/api/pessoa-juridica/cadastrar", dto)
+        return restService.post("http://localhost:8082/cadastro/api/v1/cadastros/pessoa-juridica", dto)
     }
 }

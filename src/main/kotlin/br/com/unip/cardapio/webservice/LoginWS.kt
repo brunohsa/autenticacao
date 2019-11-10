@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController
 import javax.servlet.http.HttpServletResponse
 
 @RestController
-@RequestMapping(value = ["/autenticar"])
+@RequestMapping(value = ["/v1/autenticar"])
 class LoginWS(val loginService: ILoginService) {
 
     @Value("\${facebook.provider-id}")
@@ -34,7 +34,7 @@ class LoginWS(val loginService: ILoginService) {
     }
 
     @RequestMapping(value = ["/facebook"], method = [RequestMethod.POST])
-    fun facebookLogin(@RequestBody request: OAuthLoginRequest, response: HttpServletResponse): ResponseEntity<String> {
+    fun loginFacebook(@RequestBody request: OAuthLoginRequest, response: HttpServletResponse): ResponseEntity<String> {
         val dto = OAuthLoginFirebaseDTO(request.tokenAcesso, providerFacebook!!, requestUri!!)
         val token = loginService.autenticarViaOAuth(dto)
         this.montarHeader(response, token)

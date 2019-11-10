@@ -12,7 +12,7 @@ class UsuarioDomain {
     val situacao: ESituacaoUsuario
     val perfis: List<String>
 
-    constructor(email: String,
+    constructor(email: String?,
                 senha: String?,
                 situacao: ESituacaoUsuario,
                 perfis: List<String>) {

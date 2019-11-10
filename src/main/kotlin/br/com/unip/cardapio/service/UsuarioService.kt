@@ -38,12 +38,12 @@ class UsuarioService(val usuarioRepository: IUsuarioRepository,
 
     private fun cadastrarUsuario(usuario: UsuarioDTO, perfis: List<String>) {
         val usuarioDomain = mapDomain(usuario, ESituacaoUsuario.ATIVO, perfis)
-        if (usuarioRepository.usuarioCadastrado(usuario.email)) {
+        if (usuarioRepository.usuarioCadastrado(usuario.email!!)) {
             throw CampoInvalidoException(ECodigoErro.USUARIO_JA_CADASTRADO)
         }
-        val uuid = this.cadastrarPessoa(usuario.pessoa!!)
+        val uuid: String = this.cadastrarPessoa(usuario.pessoa!!)
         firebaseService.cadastrarUsuario(usuarioDomain)
-        usuarioRepository.criar(usuarioDomain)
+        usuarioRepository.criar(usuarioDomain, uuid)
     }
 
     private fun mapDomain(usuario: UsuarioDTO, situacao: ESituacaoUsuario, perfis: List<String>): UsuarioDomain {

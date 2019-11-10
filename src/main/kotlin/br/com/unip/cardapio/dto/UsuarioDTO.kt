@@ -3,11 +3,11 @@ package br.com.unip.cardapio.dto
 class UsuarioDTO {
 
     var id: Long? = null
-    val email: String
+    val email: String?
     var senha: String? = null
     var pessoa: IPessoaDTO? = null
 
-    constructor(email: String,
+    constructor(email: String?,
                 senha: String?,
                 pessoa: IPessoaDTO) {
         this.email = email

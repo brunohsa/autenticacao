@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RestController
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 class UsuarioWS(val usuarioService: IUsuarioService) {
 
-    @RequestMapping(value = ["/cadastrar"], method = [RequestMethod.POST])
+    @RequestMapping(value = ["/cadastrar/cliente"], method = [RequestMethod.POST])
     fun criarUsuario(@RequestBody request: UsuarioPFRequest): ResponseEntity<String> {
-        val pessoa = PessoaFisicaDTO(request.nome,
+        val pessoa = PessoaFisicaDTO(request.nome!!,
                 request.sobrenome,
                 request.telefone,
                 request.dataNascimento,
