@@ -1,17 +1,17 @@
 package br.com.unip.cardapio.webservice
 
+import br.com.unip.cardapio.dto.CadastroDTO
 import br.com.unip.cardapio.dto.PessoaFisicaDTO
 import br.com.unip.cardapio.dto.PessoaJuridicaDTO
 import br.com.unip.cardapio.dto.UsuarioDTO
 import br.com.unip.cardapio.service.IUsuarioService
 import br.com.unip.cardapio.webservice.model.request.UsuarioPFRequest
 import br.com.unip.cardapio.webservice.model.request.UsuarioPJRequest
+import br.com.unip.cardapio.webservice.model.response.CadastroResponse
+import br.com.unip.cardapio.webservice.model.response.PessoaResponse
 import org.springframework.http.ResponseEntity
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RequestMethod
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping(value = ["/usuarios"])
@@ -38,5 +38,18 @@ class UsuarioWS(val usuarioService: IUsuarioService) {
         usuarioService.cadastrarFornecedor(dto)
 
         return ResponseEntity.ok().build()
+    }
+
+    @RequestMapping(value = ["/{email}/cadastro"], method = [RequestMethod.GET])
+    fun criarUsuarioFornecedor(@PathVariable("email") email: String): ResponseEntity<CadastroResponse> {
+        val cadastro = usuarioService.buscarCadastro(email)
+        return ResponseEntity.ok(map(cadastro))
+    }
+
+    private fun map(cadastroDTO: CadastroDTO): CadastroResponse {
+        val pessoaDTO = cadastroDTO.pessoa
+        val pessoaResponse = PessoaResponse(pessoaDTO.nome, pessoaDTO.tipoDocumento, pessoaDTO.numero)
+
+        return CadastroResponse(cadastroDTO.uuid, cadastroDTO.status, pessoaResponse)
     }
 }

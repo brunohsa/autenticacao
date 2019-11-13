@@ -32,4 +32,8 @@ class RestService(val mapper: ObjectMapper) : IRestService {
         val res = restTemplate.postForEntity<String>(uri, entity, String::class)
         return res.body!!
     }
+
+    override fun <T : Any> get(uri: String, response: KClass<T>): T {
+        return restTemplate.getForEntity(uri, response.java).body!!
+    }
 }

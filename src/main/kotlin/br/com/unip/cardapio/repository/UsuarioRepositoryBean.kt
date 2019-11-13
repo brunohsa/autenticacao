@@ -97,4 +97,17 @@ class UsuarioRepositoryBean(val em: EntityManager, val perfilRepository: IPerfil
 
         return query.singleResult as Long > 0
     }
+
+    override fun buscarPorEmail(email: String): UsuarioDTO {
+        var sql = StringBuilder()
+                .append("SELECT new ${UsuarioDTO::class.qualifiedName}(u.uuid, u.email, u.cadastroUuid) ")
+                .append("FROM ${Usuario::class.qualifiedName} u ")
+                .append("WHERE u.email =:email ")
+                .toString()
+
+        var query = em.createQuery(sql, UsuarioDTO::class.java)
+        query.setParameter("email", email)
+
+        return query.singleResult
+    }
 }
