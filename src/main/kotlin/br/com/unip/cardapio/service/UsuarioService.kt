@@ -1,13 +1,10 @@
 package br.com.unip.cardapio.service
 
 import br.com.unip.cardapio.domain.UsuarioDomain
-import br.com.unip.cardapio.dto.IPessoaDTO
-import br.com.unip.cardapio.dto.PermissaoDTO
-import br.com.unip.cardapio.dto.PessoaFisicaDTO
-import br.com.unip.cardapio.dto.PessoaJuridicaDTO
-import br.com.unip.cardapio.dto.UsuarioDTO
+import br.com.unip.cardapio.dto.*
 import br.com.unip.cardapio.exception.CampoInvalidoException
 import br.com.unip.cardapio.exception.ECodigoErro
+import br.com.unip.cardapio.repository.CadastroRepository
 import br.com.unip.cardapio.repository.IFirebaseRepository
 import br.com.unip.cardapio.repository.IPessoaRepository
 import br.com.unip.cardapio.repository.IUsuarioRepository
@@ -18,7 +15,8 @@ import org.springframework.stereotype.Service
 @Service
 class UsuarioService(val usuarioRepository: IUsuarioRepository,
                      val firebaseService: IFirebaseRepository,
-                     val pessoaRepository: IPessoaRepository) : IUsuarioService {
+                     val pessoaRepository: IPessoaRepository,
+                     val cadastroRepository: CadastroRepository) : IUsuarioService {
 
     override fun cadastrarConsumidor(usuario: UsuarioDTO) {
         val perfis = EPerfis.perfisConsumidor()
@@ -63,5 +61,10 @@ class UsuarioService(val usuarioRepository: IUsuarioRepository,
 
     override fun usuarioCadastrado(email: String): Boolean {
         return usuarioRepository.usuarioCadastrado(email)
+    }
+
+    override fun buscarCadastro(email: String): CadastroDTO {
+        val usuario = usuarioRepository.buscarPorEmail(email)
+        return cadastroRepository.buscar(usuario.cadastroUUID!!)
     }
 }

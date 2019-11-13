@@ -6,6 +6,8 @@ class UsuarioDTO {
     val email: String?
     var senha: String? = null
     var pessoa: IPessoaDTO? = null
+    var uuid : String? = null
+    var cadastroUUID : String? = null
 
     constructor(email: String?,
                 senha: String?,
@@ -25,5 +27,11 @@ class UsuarioDTO {
 
     constructor(email: String) {
         this.email = email
+    }
+
+    constructor(uuid: String?, email: String?, cadastroUUID: String?) {
+        this.uuid = uuid
+        this.email = email
+        this.cadastroUUID = cadastroUUID
     }
 }
