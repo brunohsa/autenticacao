@@ -41,7 +41,7 @@ class UsuarioWS(val usuarioService: IUsuarioService) {
     }
 
     @RequestMapping(value = ["/{email}/cadastro"], method = [RequestMethod.GET])
-    fun criarUsuarioFornecedor(@PathVariable("email") email: String): ResponseEntity<CadastroResponse> {
+    fun buscarCadastro(@PathVariable("email") email: String): ResponseEntity<CadastroResponse> {
         val cadastro = usuarioService.buscarCadastro(email)
         return ResponseEntity.ok(map(cadastro))
     }
