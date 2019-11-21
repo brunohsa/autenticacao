@@ -5,6 +5,7 @@ import br.com.unip.cardapio.dto.firebase.OAuthLoginFirebaseDTO
 import br.com.unip.cardapio.service.ILoginService
 import br.com.unip.cardapio.webservice.model.request.LoginRequest
 import br.com.unip.cardapio.webservice.model.request.OAuthLoginRequest
+import br.com.unip.cardapio.webservice.model.response.TokenResponse
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.RequestBody
@@ -15,7 +16,7 @@ import javax.servlet.http.HttpServletResponse
 
 @RestController
 @RequestMapping(value = ["/v1/autenticar"])
-class LoginWS(val loginService: ILoginService) {
+class   LoginWS(val loginService: ILoginService) {
 
     @Value("\${facebook.provider-id}")
     private val providerFacebook: String? = null
@@ -25,12 +26,11 @@ class LoginWS(val loginService: ILoginService) {
 
 
     @RequestMapping(method = [RequestMethod.POST])
-    fun login(@RequestBody request: LoginRequest, response: HttpServletResponse): ResponseEntity<String> {
+    fun login(@RequestBody request: LoginRequest, response: HttpServletResponse): ResponseEntity<TokenResponse> {
         val dto = LoginDTO(request.email, request.senha)
         val token = loginService.autenticar(dto)
-        this.montarHeader(response, token)
 
-        return ResponseEntity.ok().build()
+        return ResponseEntity.ok(TokenResponse(token))
     }
 
     @RequestMapping(value = ["/facebook"], method = [RequestMethod.POST])
