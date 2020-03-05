@@ -10,7 +10,7 @@ class Claims {
     var scopes: List<String> = emptyList()
 
     @JsonProperty(value = "email")
-    var email: String? = ""
+    lateinit var email: String
 
     @JsonProperty(value = "cadastro_uuid")
     var cadastroUUID: String? = ""

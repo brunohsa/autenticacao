@@ -1,6 +1,6 @@
 package br.com.unip.autenticacao.exception
 
-class DataPassadaException : CardapBaseException{
+class DataPassadaException : AutenticacaoBaseException{
 
     constructor()
 

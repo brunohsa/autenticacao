@@ -38,7 +38,7 @@ class UsuarioRepositoryBean(val em: EntityManager, val perfilRepository: IPerfil
 
     override fun buscar(email: String): UsuarioDTO? {
         var sql = StringBuilder()
-                .append("SELECT new ${UsuarioDTO::class.qualifiedName}(u.id, u.email, u.senha) ")
+                .append("SELECT new ${UsuarioDTO::class.qualifiedName}(u.id, u.uuid, u.email) ")
                 .append("FROM Usuario u ")
                 .append("WHERE u.email =:email ")
                 .append("AND u.situacao in (:situacoes) ")
@@ -107,6 +107,19 @@ class UsuarioRepositoryBean(val em: EntityManager, val perfilRepository: IPerfil
 
         var query = em.createQuery(sql, UsuarioDTO::class.java)
         query.setParameter("email", email)
+
+        return query.singleResult
+    }
+
+    override fun buscarPorApiKey(apiKey: String): UsuarioDTO {
+        var sql = StringBuilder()
+                .append("SELECT new ${UsuarioDTO::class.qualifiedName}(u.id, u.uuid, u.email, u.senha) ")
+                .append("FROM ${Usuario::class.qualifiedName} u ")
+                .append("WHERE u.apikey =:apikey ")
+                .toString()
+
+        var query = em.createQuery(sql, UsuarioDTO::class.java)
+        query.setParameter("apikey", apikey)
 
         return query.singleResult
     }

@@ -2,7 +2,7 @@ package br.com.unip.autenticacao.exception
 
 open class CardapBaseException : RuntimeException {
 
-    var codigoErro: ECodigoErro? = null
+    lateinit var codigoErro: ECodigoErro
 
     constructor()
 
