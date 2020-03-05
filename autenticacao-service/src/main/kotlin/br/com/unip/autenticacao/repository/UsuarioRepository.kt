@@ -11,7 +11,7 @@ import javax.persistence.EntityManager
 import javax.transaction.Transactional
 
 @Repository
-class UsuarioRepositoryBean(val em: EntityManager, val perfilRepository: IPerfilRepository) : IUsuarioRepository {
+class UsuarioRepository(val em: EntityManager, val perfilRepository: IPerfilRepository) : IUsuarioRepository {
 
     @Transactional
     override fun criar(domain: UsuarioDomain) {
@@ -111,7 +111,7 @@ class UsuarioRepositoryBean(val em: EntityManager, val perfilRepository: IPerfil
         return query.singleResult
     }
 
-    override fun buscarPorApiKey(apiKey: String): UsuarioDTO {
+    override fun buscarPorApiKey(apikey: String): UsuarioDTO {
         var sql = StringBuilder()
                 .append("SELECT new ${UsuarioDTO::class.qualifiedName}(u.id, u.uuid, u.email, u.senha) ")
                 .append("FROM ${Usuario::class.qualifiedName} u ")

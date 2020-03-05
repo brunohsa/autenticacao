@@ -1,16 +1,21 @@
 package br.com.unip.autenticacao.exception
 
-open class CardapBaseException : RuntimeException {
+import org.springframework.http.HttpStatus
+
+open class AutenticacaoBaseException : RuntimeException {
 
     lateinit var codigoErro: ECodigoErro
+    lateinit var httpStatus: HttpStatus
 
     constructor()
 
-    constructor(message: String?, codigoErro: ECodigoErro) : super(message) {
+    constructor(message: String?, codigoErro: ECodigoErro, httpStatus: HttpStatus) : super(message) {
         this.codigoErro = codigoErro
+        this.httpStatus = httpStatus
     }
 
-    constructor(codigoErro: ECodigoErro) {
+    constructor(codigoErro: ECodigoErro, httpStatus: HttpStatus) {
         this.codigoErro = codigoErro
+        this.httpStatus = httpStatus
     }
 }

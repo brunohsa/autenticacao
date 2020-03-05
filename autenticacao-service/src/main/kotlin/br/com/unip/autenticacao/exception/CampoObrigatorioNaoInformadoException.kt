@@ -1,10 +1,11 @@
 package br.com.unip.autenticacao.exception
 
-class CampoObrigatorioNaoInformadoException : CardapBaseException {
+import br.com.unip.autenticacao.exception.ECodigoErro.CAMPO_OBRIGATORIO_NAO_INFORMADO
+import org.springframework.http.HttpStatus.BAD_REQUEST
 
-    constructor()
-    
-    constructor(message: String?, codigoErro: ECodigoErro) : super(message, codigoErro)
+class CampoObrigatorioNaoInformadoException : AutenticacaoBaseException {
 
-    constructor(codigoErro: ECodigoErro) : super(codigoErro)
+    constructor() : this(CAMPO_OBRIGATORIO_NAO_INFORMADO)
+
+    constructor(codigoErro: ECodigoErro) : super(codigoErro, BAD_REQUEST)
 }

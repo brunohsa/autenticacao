@@ -19,4 +19,6 @@ interface IUsuarioRepository {
     fun usuarioCadastrado(email : String) : Boolean
 
     fun buscarPorEmail(email: String): UsuarioDTO
+
+    fun buscarPorApiKey(apiKey: String): UsuarioDTO
 }

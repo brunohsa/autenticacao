@@ -8,12 +8,14 @@ import br.com.unip.autenticacao.dto.PessoaFisicaDTO
 import br.com.unip.autenticacao.dto.PessoaJuridicaDTO
 import br.com.unip.autenticacao.dto.UsuarioDTO
 import br.com.unip.autenticacao.exception.CampoInvalidoException
-import br.com.unip.autenticacao.exception.ECodigoErro
+import br.com.unip.autenticacao.exception.CampoObrigatorioNaoInformadoException
+import br.com.unip.autenticacao.exception.ECodigoErro.DADOS_DA_PESSOA_SAO_OBRIGATORIOS
+import br.com.unip.autenticacao.exception.ECodigoErro.USUARIO_JA_CADASTRADO
 import br.com.unip.autenticacao.repository.CadastroRepository
 import br.com.unip.autenticacao.repository.IFirebaseRepository
 import br.com.unip.autenticacao.repository.IUsuarioRepository
 import br.com.unip.autenticacao.repository.entity.enums.EPerfis
-import br.com.unip.autenticacao.repository.entity.enums.ESituacaoUsuario
+import br.com.unip.autenticacao.repository.entity.enums.ESituacaoUsuario.ATIVO
 import org.springframework.stereotype.Service
 
 @Service
@@ -23,36 +25,41 @@ class UsuarioService(val usuarioRepository: IUsuarioRepository,
 
     override fun cadastrarConsumidor(usuario: UsuarioDTO) {
         val perfis = EPerfis.perfisConsumidor()
-        this.cadastrarUsuario(usuario, perfis)
+        cadastrarUsuario(usuario, perfis, true)
     }
 
     override fun cadastrarFornecedor(usuario: UsuarioDTO) {
         val perfis = EPerfis.perfisFornecedor()
-        this.cadastrarUsuario(usuario, perfis)
+        cadastrarUsuario(usuario, perfis, true)
     }
 
     override fun cadastrarUsuarioOAuth(usuario: UsuarioDTO) {
         val perfis = EPerfis.perfisConsumidor()
-        val domain = mapDomain(usuario, ESituacaoUsuario.ATIVO, perfis)
-        usuarioRepository.criar(domain)
+        cadastrarUsuario(usuario, perfis, false)
     }
 
-    private fun cadastrarUsuario(usuario: UsuarioDTO, perfis: List<String>) {
-        val usuarioDomain = mapDomain(usuario, ESituacaoUsuario.ATIVO, perfis)
-        if (usuarioRepository.usuarioCadastrado(usuario.email!!)) {
-            throw CampoInvalidoException(ECodigoErro.USUARIO_JA_CADASTRADO)
-        }
-        val uuid: String = this.cadastrarPessoa(usuario.pessoa!!)
+    private fun cadastrarUsuario(usuario: UsuarioDTO, perfis: List<String>, cadastrarNoFirebase: Boolean) {
+        val usuarioDomain = UsuarioDomain(usuario.email, usuario.senha, ATIVO, perfis)
+        validarSeUsuarioJaEstaCadastrado(usuarioDomain.email.get())
 
-        firebaseService.cadastrarUsuario(usuarioDomain)
+        val uuid: String = this.cadastrarPessoa(usuario.pessoa)
         usuarioRepository.criar(usuarioDomain, uuid)
+
+        if (cadastrarNoFirebase) {
+            firebaseService.cadastrarUsuario(usuarioDomain)
+        }
     }
 
-    private fun mapDomain(usuario: UsuarioDTO, situacao: ESituacaoUsuario, perfis: List<String>): UsuarioDomain {
-        return UsuarioDomain(usuario.email, usuario.senha, situacao, perfis)
+    private fun validarSeUsuarioJaEstaCadastrado(email: String) {
+        if (usuarioRepository.usuarioCadastrado(email)) {
+            throw CampoInvalidoException(USUARIO_JA_CADASTRADO)
+        }
     }
 
-    private fun cadastrarPessoa(pessoa: IPessoaDTO): String {
+    private fun cadastrarPessoa(pessoa: IPessoaDTO?): String {
+        if (pessoa == null) {
+            throw CampoObrigatorioNaoInformadoException(DADOS_DA_PESSOA_SAO_OBRIGATORIOS)
+        }
         if (pessoa is PessoaFisicaDTO) {
             return cadastroRepository.cadastrar(pessoa)
         }
@@ -72,7 +79,11 @@ class UsuarioService(val usuarioRepository: IUsuarioRepository,
         return cadastroRepository.buscar(usuario.cadastroUUID!!)
     }
 
-    override fun buscarUsuario(email: String): UsuarioDTO {
+    override fun buscar(email: String): UsuarioDTO {
         return usuarioRepository.buscarPorEmail(email)
+    }
+
+    override fun buscarPorApiKey(apiKey: String): UsuarioDTO {
+        return usuarioRepository.buscarPorApiKey(apiKey)
     }
 }

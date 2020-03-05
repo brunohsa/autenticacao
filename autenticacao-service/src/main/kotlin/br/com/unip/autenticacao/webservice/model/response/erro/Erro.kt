@@ -1,7 +1,5 @@
-package br.com.unip.autenticacao.webservice.model.response
+package br.com.unip.autenticacao.webservice.model.response.erro
 
-import br.com.unip.autenticacao.exception.ECodigoErro
-import com.fasterxml.jackson.annotation.JsonGetter
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.annotation.JsonProperty
 
@@ -9,25 +7,19 @@ import com.fasterxml.jackson.annotation.JsonProperty
 class Erro {
 
     @JsonProperty(value = "codigo")
-    private lateinit var codigoErro: ECodigoErro
+    lateinit var codigoErro: String
 
     @JsonProperty(value = "mensagem")
-    private var mensagem: String? = ""
+    var mensagem: String? = ""
+
+    @JsonProperty(value = "microservico")
+    private var microservice: EMicroservice = EMicroservice.AUTENTICACAO
 
     constructor()
 
-    constructor(codigo: ECodigoErro, mensagem: String?) {
+    constructor(codigo: String, mensagem: String?) {
         this.codigoErro = codigo
         this.mensagem = mensagem
-    }
-
-    @JsonGetter(value = "codigo")
-    fun getCodigo(): String {
-        return codigoErro.codigo
-    }
-
-    fun getMensagem(): String? {
-        return mensagem
     }
 
 }

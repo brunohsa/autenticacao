@@ -1,8 +1,10 @@
 package br.com.unip.autenticacao.exception
 
-class DataPassadaException : AutenticacaoBaseException{
+import br.com.unip.autenticacao.exception.ECodigoErro.DATA_NAO_RETROATIVA
 
-    constructor()
+class DataRetroativaException : CampoInvalidoException {
+
+    constructor() : this(DATA_NAO_RETROATIVA)
 
     constructor(codigoErro: ECodigoErro) : super(codigoErro)
 }

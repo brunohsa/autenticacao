@@ -2,7 +2,6 @@ package br.com.unip.autenticacao.repository.entity.enums
 
 enum class EPerfis {
 
-    ADMINISTRADOR,
     SISTEMA,
     CONSUMIDOR,
     FORNECEDOR;

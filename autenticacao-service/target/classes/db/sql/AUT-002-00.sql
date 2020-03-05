@@ -18,8 +18,10 @@ CREATE TABLE Perfil (
 CREATE TABLE Usuario (
     id int NOT NULL AUTO_INCREMENT,
     email varchar(60) NOT NULL UNIQUE,
+    senha varchar(40),
     uuid varchar(40) NOT NULL UNIQUE,
     situacao varchar(30),
+    apikey varchar(100),
     cadastro_uuid varchar(40),
     firebase_id varchar(60),
     PRIMARY KEY (id)

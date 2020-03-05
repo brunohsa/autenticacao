@@ -10,13 +10,13 @@ import java.util.HashMap
 class GeradorTokenUtil(val usuarioService: IUsuarioService) {
 
     fun gerar(usuarioAutenticado: UsuarioAutenticadoDTO): String {
-        val usuario = usuarioService.buscarUsuario(usuarioAutenticado.email)
+        val usuario = usuarioService.buscar(usuarioAutenticado.email)
 
-        val additionalClaims = HashMap<String, Any>()
+        val additionalClaims = HashMap<String, Any?>()
         additionalClaims["scopes"] = this.buscarPremissoes(usuario.email!!)
         additionalClaims["email"] = usuario.email
-        additionalClaims["cadastro_uuid"] = usuario.cadastroUUID!!
-        additionalClaims["usuario_uuid"] = usuario.uuid!!
+        additionalClaims["cadastro_uuid"] = usuario.cadastroUUID
+        additionalClaims["usuario_uuid"] = usuario.uuid
 
         return FirebaseAuth.getInstance().createCustomToken(usuarioAutenticado.localId, additionalClaims)
     }

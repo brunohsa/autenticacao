@@ -6,7 +6,7 @@ import javax.persistence.EntityManager
 import javax.persistence.NoResultException
 
 @Repository
-class PerfilRepositoryBean(val em: EntityManager) : IPerfilRepository {
+class PerfilRepository(val em: EntityManager) : IPerfilRepository {
 
     override fun buscarPorNome(nome: String): Perfil? {
         var sql = StringBuilder()

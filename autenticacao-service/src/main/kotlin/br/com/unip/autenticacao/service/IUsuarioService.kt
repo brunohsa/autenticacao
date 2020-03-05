@@ -18,5 +18,7 @@ interface IUsuarioService {
 
     fun buscarCadastro(email: String): CadastroDTO
 
-    fun buscarUsuario(email: String) : UsuarioDTO
+    fun buscar(email: String) : UsuarioDTO
+
+    fun buscarPorApiKey(apiKey: String) : UsuarioDTO
 }

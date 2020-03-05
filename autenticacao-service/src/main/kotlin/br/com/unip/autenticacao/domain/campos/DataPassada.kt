@@ -1,6 +1,6 @@
 package br.com.unip.autenticacao.domain.campos
 
-import br.com.unip.autenticacao.exception.DataPassadaException
+import br.com.unip.autenticacao.exception.DataRetroativaException
 import java.time.LocalDate
 
 class DataPassada : ICampo<LocalDate> {
@@ -17,7 +17,7 @@ class DataPassada : ICampo<LocalDate> {
 
     private fun dataPassada(dataPassada: LocalDate): LocalDate {
         if (!dataPassada.isBefore(LocalDate.now())) {
-            throw DataPassadaException()
+            throw DataRetroativaException()
         }
         return dataPassada
     }

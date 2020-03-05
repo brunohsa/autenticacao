@@ -6,32 +6,30 @@ class UsuarioDTO {
     val email: String?
     var senha: String? = null
     var pessoa: IPessoaDTO? = null
-    var uuid : String? = null
-    var cadastroUUID : String? = null
+    var uuid: String? = null
+    var cadastroUUID: String? = null
 
-    constructor(email: String?,
-                senha: String?,
-                pessoa: IPessoaDTO) {
-        this.email = email
+    constructor(email: String?, senha: String?, pessoa: IPessoaDTO) : this(email, pessoa) {
         this.senha = senha
-        this.pessoa = pessoa
     }
 
-    constructor(id: Long,
-                email: String,
-                senha: String) {
+    constructor(id: Long, uuid: String, email: String, senha: String) : this(uuid, email) {
         this.id = id
         this.senha = senha
-        this.email = email
     }
 
-    constructor(email: String) {
-        this.email = email
+
+    constructor(uuid: String?, email: String?, cadastroUUID: String?) : this(uuid, email) {
+        this.cadastroUUID = cadastroUUID
     }
 
-    constructor(uuid: String?, email: String?, cadastroUUID: String?) {
+    constructor(uuid: String?, email: String?) {
         this.uuid = uuid
         this.email = email
-        this.cadastroUUID = cadastroUUID
+    }
+
+    constructor(email: String?, pessoa: IPessoaDTO) {
+        this.email = email
+        this.pessoa = pessoa
     }
 }

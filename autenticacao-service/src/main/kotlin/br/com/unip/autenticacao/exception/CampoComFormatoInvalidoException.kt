@@ -1,8 +1,11 @@
 package br.com.unip.autenticacao.exception
 
-class CampoComFormatoInvalidoException : CardapBaseException {
+import br.com.unip.autenticacao.exception.ECodigoErro.CAMPO_COM_FORMATO_INVALIDO
+import org.springframework.http.HttpStatus.BAD_REQUEST
 
-    constructor()
+class CampoComFormatoInvalidoException : AutenticacaoBaseException {
 
-    constructor(codigoErro: ECodigoErro) : super(codigoErro)
+    constructor() : this(CAMPO_COM_FORMATO_INVALIDO)
+
+    constructor(codigoErro: ECodigoErro) : super(codigoErro, BAD_REQUEST)
 }
