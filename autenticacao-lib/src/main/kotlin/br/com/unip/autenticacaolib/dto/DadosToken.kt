@@ -7,12 +7,8 @@ import com.fasterxml.jackson.annotation.JsonProperty
 class DadosToken {
 
     @JsonProperty(value = "claims")
-    private lateinit var claims: Claims
+    lateinit var claims: Claims
 
     @JsonProperty(value = "exp")
     var expiration: Long = 0
-
-    fun getClaims(): Claims {
-        return claims
-    }
 }

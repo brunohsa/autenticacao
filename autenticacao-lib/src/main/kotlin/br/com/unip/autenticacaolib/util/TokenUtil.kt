@@ -26,7 +26,7 @@ class TokenUtil {
         val dadosToken = getAuth(request) ?: getOAuth(request) ?: throw TokenInvalidoException()
         val autorizacoes = this.getAutorizacoes(dadosToken)
 
-        return AuthenticationToken(dadosToken.getClaims(), autorizacoes)
+        return AuthenticationToken(dadosToken.claims, autorizacoes)
     }
 
     private fun getAuth(request: HttpServletRequest): DadosToken? {
@@ -84,7 +84,7 @@ class TokenUtil {
     }
 
     private fun getAutorizacoes(dadosToken: DadosToken): List<SimpleGrantedAuthority> {
-        val scopes = dadosToken.getClaims().scopes
+        val scopes = dadosToken.claims.scopes
         return scopes.map { s -> SimpleGrantedAuthority(s) }.toList()
     }
 }

@@ -31,7 +31,6 @@ class AutenticacaoRestRepository {
         val entity = HttpEntity(null, headers)
 
         val uri = UriComponentsBuilder.fromHttpUrl(url).queryParams(params).build().toUri()
-
         return RestTemplate().exchange(uri, GET, entity, String::class.java)
     }
 }

@@ -1,7 +1,6 @@
 package br.com.unip.autenticacao.service
 
 import br.com.unip.autenticacao.domain.UsuarioDomain
-import br.com.unip.autenticacao.dto.CadastroDTO
 import br.com.unip.autenticacao.dto.IPessoaDTO
 import br.com.unip.autenticacao.dto.PermissaoDTO
 import br.com.unip.autenticacao.dto.PessoaFisicaDTO
@@ -72,11 +71,6 @@ class UsuarioService(val usuarioRepository: IUsuarioRepository,
 
     override fun usuarioCadastrado(email: String): Boolean {
         return usuarioRepository.usuarioCadastrado(email)
-    }
-
-    override fun buscarCadastro(email: String): CadastroDTO {
-        val usuario = usuarioRepository.buscarPorEmail(email)
-        return cadastroRepository.buscar(usuario.cadastroUUID!!)
     }
 
     override fun buscar(email: String): UsuarioDTO {

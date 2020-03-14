@@ -2,15 +2,17 @@ package br.com.unip.autenticacao.security.filter
 
 
 import br.com.unip.autenticacao.exception.ECodigoErro
-import br.com.unip.autenticacao.exception.TokenExpiradoException
-import br.com.unip.autenticacao.exception.TokenInvalidoException
-import br.com.unip.autenticacao.webservice.model.response.erro.EMicroservice
+import br.com.unip.autenticacao.exception.ECodigoErro.TOKEN_EXPIRADO
+import br.com.unip.autenticacao.exception.ECodigoErro.TOKEN_INVALIDO
 import br.com.unip.autenticacao.webservice.model.response.erro.Erro
-import br.com.unip.autenticacao.webservice.model.response.erro.ResponseError
+import br.com.unip.autenticacaolib.exception.TokenExpiradoException
+import br.com.unip.autenticacaolib.exception.TokenInvalidoException
 import br.com.unip.autenticacaolib.util.TokenUtil
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.context.MessageSource
 import org.springframework.http.HttpStatus
+import org.springframework.http.HttpStatus.FORBIDDEN
+import org.springframework.http.HttpStatus.UNAUTHORIZED
 import org.springframework.http.MediaType
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.web.filter.GenericFilterBean
@@ -34,14 +36,14 @@ class AuthenticationFilter(val messageSource: MessageSource) : GenericFilterBean
             SecurityContextHolder.getContext().authentication = authentication
             filterChain.doFilter(request, response)
         } catch (e: TokenExpiradoException) {
-            setJWTErrorResponse(response, e.httpStatus, e.codigoErro)
+            setJWTErrorResponse(response, TOKEN_EXPIRADO, FORBIDDEN)
         } catch (e: TokenInvalidoException) {
-            setJWTErrorResponse(response, e.httpStatus, e.codigoErro)
+            setJWTErrorResponse(response, TOKEN_INVALIDO, UNAUTHORIZED)
         }
     }
 
     @Throws(IOException::class)
-    private fun setJWTErrorResponse(response: ServletResponse, httpStatus: HttpStatus, codigo: ECodigoErro) {
+    private fun setJWTErrorResponse(response: ServletResponse, codigo: ECodigoErro, httpStatus: HttpStatus) {
         val httpResponse = response as HttpServletResponse
 
         val erro = getErro(codigo)

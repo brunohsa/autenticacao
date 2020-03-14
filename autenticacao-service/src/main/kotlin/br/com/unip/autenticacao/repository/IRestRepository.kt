@@ -1,9 +1,9 @@
-package br.com.unip.autenticacao.service
+package br.com.unip.autenticacao.repository
 
 import org.springframework.util.LinkedMultiValueMap
 import kotlin.reflect.KClass
 
-interface IRestService {
+interface IRestRepository {
 
     fun <T : Any> post(uri: String, request: Any, response: KClass<T>): T
 
