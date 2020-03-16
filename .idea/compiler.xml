@@ -6,13 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="autenticacao" />
+        <module name="autenticacao-lib" />
+        <module name="autenticacao-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="autencacao-lib" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="autenticacao" options="-parameters" />
+      <module name="autencacao-lib" options="-parameters" />
+      <module name="autenticacao" options="" />
+      <module name="autenticacao-lib" options="-parameters" />
+      <module name="autenticacao-service" options="-parameters" />
     </option>
   </component>
 </project>

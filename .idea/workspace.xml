@@ -2,148 +2,107 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60785265-7743-4b00-8f7b-94500422d85a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/UsuarioDomain.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/model/request/UsuarioPFRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/br/com/unip/cardapio/domain/campos/CampoObrigatorioTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/br/com/unip/cardapio/domain/campos/EmailTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/br/com/unip/cardapio/domain/campos/SenhaTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/UsuarioDomain.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/PerfilDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/PerfilDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/UsuarioDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/UsuarioDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/IUsuarioRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/IUsuarioRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/UsuarioRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/UsuarioRepositoryBean.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/entity/Perfil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/entity/Perfil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/entity/Permissao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/entity/Permissao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/entity/Usuario.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/entity/Usuario.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/security/SecurityConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/security/SecurityConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/security/dto/LoginDTO.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/security/filter/LoginFilter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/security/provider/DatabaseAuthenticationProvider.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/DatabaseAuthenticationService.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/IDatabaseAuthenticationService.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/IUsuarioService.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/UsuarioService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/UsuarioService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/util/TokenUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/util/TokenUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/UsuarioWS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/UsuarioWS.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/model/request/UsuarioRequest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/sql/AUT-002-00.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/sql/AUT-002-00.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/autenticacao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/autenticacao-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/confidencecambio/auth/dto/LoginDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/UsuarioDomain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/dto/PerfilDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/dto/PerfilDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/dto/UsuarioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/dto/UsuarioDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/repository/IUsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/repository/IUsuarioRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/repository/UsuarioRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/repository/entity/Perfil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/repository/entity/Perfil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/repository/entity/Permissao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/repository/entity/Permissao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/repository/entity/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/repository/entity/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/security/SecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/security/filter/LoginFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/security/provider/DatabaseAuthenticationProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/service/DatabaseAuthenticationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/service/IDatabaseAuthenticationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/service/IUsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/service/IUsuarioService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/service/UsuarioService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/util/TokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/util/TokenUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/webservice/UsuarioWS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/webservice/UsuarioWS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/webservice/model/request/UsuarioRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/sql/AUT-002-00.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/sql/AUT-002-00.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/UrlServicos.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/repository/AutenticacaoRestRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/repository/AutenticacaoRestRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/TokenUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/TokenUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-lib/target/autenticacao-lib-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/target/autenticacao-lib-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/UrlServicos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/repository/AutenticacaoRestRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/repository/AutenticacaoRestRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/util/TokenUtil$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/util/TokenUtil$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/util/TokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/util/TokenUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/HandlerException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/HandlerException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/SecurityConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/SecurityConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/filter/AuthenticationFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/filter/AuthenticationFilter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/LoginWS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/LoginWS.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/autenticacao-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/autenticacao-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/META-INF/autenticacao-service.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/META-INF/autenticacao-service.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/exception/HandlerException.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/exception/HandlerException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/CadastroRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/CadastroRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/FirebaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/FirebaseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/ICadastroRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/ICadastroRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/IRestRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/IRestRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/IUsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/IUsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/RestRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/RestRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/UsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/security/SecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/security/filter/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/security/filter/AuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/service/IUsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/service/IUsuarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/service/UsuarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/util/GeradorTokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/util/GeradorTokenUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/webservice/LoginWS.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/webservice/LoginWS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/webservice/UsuarioWS.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/webservice/UsuarioWS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.CampoObrigatorioTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.CampoObrigatorioTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.EmailTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.EmailTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.SenhaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.SenhaTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.CampoObrigatorioTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.CampoObrigatorioTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.EmailTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.EmailTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.SenhaTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.SenhaTest.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/autencacao-lib/target/" />
+    <ignored path="$PROJECT_DIR$/autenticacao-lib/target/" />
+    <ignored path="$PROJECT_DIR$/autenticacao-service/target/" />
+    <ignored path="$PROJECT_DIR$/autenticacao-service/${project.build.directory}/classes/" />
+    <ignored path="$PROJECT_DIR$/autenticacao-service/${project.build.directory}/test-classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/autenticacao$br_com_unip_cardapio_StartApplicationKt.ic" NAME="br.com.unip.cardapio.StartApplicationKt Coverage Results" MODIFIED="1575463530055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/filter/AuthenticationFilter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="29" column="81" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/UsuarioWS.kt">
+        <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/SecurityConfiguration.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/UsuarioService.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="59" column="62" lean-forward="true" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/PessoaRepository.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="135">
+              <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
               <folding>
-                <element signature="e#41#236#0" expanded="true" />
+                <element signature="e#43#775#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/PessoaJuridicaDTO.kt">
+        <entry file="file://$PROJECT_DIR$/autenticacao-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding>
-                <element signature="e#34#147#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="273">
+              <caret line="230" column="20" selection-start-line="230" selection-start-column="20" selection-end-line="232" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/RestService.kt">
+        <entry file="file://$PROJECT_DIR$/autenticacao-service/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="51" />
+            <state relative-caret-position="187">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/IRestService.kt">
+        <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/AuthenticationConfig.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/PessoaFisicaDTO.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding>
-                <element signature="e#34#147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/exception/ECodigoErro.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -155,26 +114,43 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Class" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>@Valu</find>
-      <find>\${</find>
-      <find>Perfil</find>
-      <find>::class.qualifiedName</find>
-      <find>stra</find>
-      <find>tempo.expiracao</find>
-      <find>@Value(</find>
-      <find>LoginWS</find>
-      <find>/autenticar</find>
-      <find>request</find>
-      <find>firebase.oauth.auth.url</find>
-      <find>UsuarioDTO</find>
-      <find>constructor</find>
+      <find>@Value</find>
+      <find>late</find>
+      <find>heade</find>
+      <find>fasterxml</find>
+      <find>exMultiValueMap</find>
+      <find>apikey</find>
+      <find>firebase.email.sing-up.url</find>
+      <find>firebase.email.sing-in.url</find>
       <find>firebase.api.key</find>
-      <find>0006</find>
+      <find>objectMa</find>
+      <find>403</find>
+      <find>USUARIO_JA_CADASTRADO</find>
+      <find>bra</find>
+      <find>service.account-id</find>
+      <find>id_permissao_buscar_produto</find>
+      <find>RestRepository</find>
+      <find>spring.datasource.url</find>
+      <find>127.0.0.1</find>
+      <find>localhost</find>
+      <find>GOOGLE_CRE</find>
+      <find>creden</find>
+      <find>GOOGLE_APPLICATION_CREDENTIALS</find>
+      <find>teste-5a6a1ed37529</find>
+      <find>cre</find>
+      <find>/cadastrar/cliente</find>
+      <find>liquibase</find>
+      <find>facebook.provider-id''</find>
+      <find>spring-boo</find>
+      <find>spring-boor</find>
+      <find>@Val</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,57 +159,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/IFirebaseService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/FirebaseService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/FirebaseRepository.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/LoginFirebaseDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/LoginDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/FirebaseEmailRequest.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/ILoginService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/TokenDeAcesso.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/TokenDeAcessoOAuth.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/exception/CampoObrigatorioNaoInformadoException.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/ProviderId.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/RequestURI.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/exception/ECodigoErro.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/OAuthLoginDomain.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/OAuthLoginFirebaseDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/IFirebaseRepository.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/FirebaseRepository.kt" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/LoginWS.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/LoginFirebaseDomain.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/UsuarioDomain.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/Senha.kt" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/sql/AUT-002-00.sql" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/model/request/UsuarioRequest.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/model/request/UsuarioPFRequest.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/model/request/UsuarioPJRequest.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/IUsuarioDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/UsuarioPJDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/UsuarioPjService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/IUsuarioPFService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/IUsuarioPJService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/UsuarioPJService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/UsuarioPFService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/UsuarioPFDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/IUsuarioService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/LoginService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/UsuarioDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/FirebaseEmailSenhaRequest.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/FirebaseEmailSenhaDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/OAuthLoginRequest.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/OAuthLoginDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/UsuarioWS.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/IPessoaRepository.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/util/TokenUtil.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/PessoaJuridicaDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/UsuarioRepositoryBean.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/PessoaFisicaDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/IRestService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/RestService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/PessoaRepository.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/UsuarioService.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/DataPassadaException.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/DataRetroativaException.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/TokenExpiradoException.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/TokenInvalidoException.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/CampoComFormatoInvalidoException.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/CampoInvalidoException.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/ECodigoErro.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/resources/messages.properties" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/model/response/erro/Microservice.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/model/response/erro/EMicroservice.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/model/response/erro/Erro.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/resources/db/sql/AUT-002-00.sql" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/entity/Usuario.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/exception/ECodigoErro.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/exception/TokenInvalidoException.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/exception/TokenExpiradoException.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/dto/DadosToken.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/AutenthicationUtil.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/AuthenticationUtil.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/resources/db/sql/AUT-002-01.sql" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/RestService.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/RestRepository.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/CadastroRepository.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/UsuarioWS.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/service/IUsuarioService.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/UsuarioRepository.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/IUsuarioRepository.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/service/UsuarioService.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/ICadastroRepository.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/HandlerException.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/ProjectConfiguration.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/PropertiesUtil.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/UrlServicos.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/resources/configuration-docker.properties" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/resources/configuration.properties" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/PropertiesUtil.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/ConfigToken.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/AuthenticationConfig.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/pom.xml" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/TokenUtil.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/resources/application-docker.properties" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/resources/application-local.properties" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/LoginWS.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/Dockerfile" />
+        <option value="$PROJECT_DIR$/autenticacao-service/pom.xml" />
+        <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/repository/AutenticacaoRestRepository.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/filter/AuthenticationFilter.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/SecurityConfiguration.kt" />
       </list>
     </option>
   </component>
@@ -245,10 +221,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1407" />
-    <option name="y" value="-4" />
-    <option name="width" value="1559" />
-    <option name="height" value="904" />
+    <option name="x" value="43" />
+    <option name="y" value="25" />
+    <option name="width" value="1323" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -258,6 +234,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -269,124 +246,170 @@
             <path>
               <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
               <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
               <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cardapio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
               <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cardapio" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
               <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cardapio" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacaolib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacaolib" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
               <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cardapio" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacaolib" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
               <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cardapio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
               <item name="webservice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
               <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cardapio" type="462c0819:PsiDirectoryNode" />
-              <item name="webservice" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570728679646" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cotacao" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584377900312" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../atualizacao-taxas" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/autenticacao-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/autenticacao-lib/src/main/resources" />
+      <recent name="$PROJECT_DIR$/autenticacao-service" />
+      <recent name="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacao/exception" />
+      <recent name="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/cardapio" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="br.com.unip.cardapio.repository" />
-      <recent name="br.com.unip.cardapio.service" />
-      <recent name="br.com.unip.cardapio.dto" />
-      <recent name="br.com.unip.cardapio.webservice.model.request" />
-      <recent name="br.com.unip.cardapio.dto.firebase" />
+      <recent name="br.com.unip.autenticacaolib" />
+      <recent name="br.com.unip.autenticacao.webservice.model.response" />
+      <recent name="br.com.unip.autenticacaolib.repository" />
+      <recent name="br.com.unip.autenticacao.security.filter" />
+      <recent name="br.com.unip.autenticacaolib.dto" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="br.com.unip.cardapio.repository" />
+      <recent name="br.com.unip.autenticacaolib.util" />
+      <recent name="br.com.unip.autenticacao.repository" />
+      <recent name="br.com.unip.autenticacao.webservice.model.response.erro" />
+      <recent name="br.com.unip.autenticacaolib" />
+      <recent name="br.com.unip.autenticacao.exception" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos" />
-      <recent name="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/cardapio" />
+      <recent name="$PROJECT_DIR$/autenticacao-service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -401,23 +424,73 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="br.com.unip.cardapio.StartApplicationKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.br.com.unip.autenticacao.StartApplicationKt">
+    <configuration name="EmailTest.teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autenticacao-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.unip.autenticacao.domain.campos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.unip.autenticacao.domain.campos" />
+      <option name="MAIN_CLASS_NAME" value="br.com.unip.autenticacao.domain.campos.EmailTest" />
+      <option name="METHOD_NAME" value="teste" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.unip.autenticacao.StartApplicationKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="autenticacao-service" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-Plocal" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="br.com.unip.autenticacao.StartApplicationKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.unip.autenticacao.StartApplicationKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="autenticacao" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="br.com.unip.cardapio.StartApplicationKt" />
+      <option name="MAIN_CLASS_NAME" value="br.com.unip.autenticacao.StartApplicationKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="br.com.unip.cardapio.StartApplicationKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true">
+      <module name="autenticacao-service" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="br.com.unip.cardapio.StartApplicationKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.EmailTest.teste" />
+      <item itemvalue="Kotlin.br.com.unip.autenticacao.StartApplicationKt" />
+      <item itemvalue="Kotlin.br.com.unip.cardapio.StartApplicationKt" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.br.com.unip.cardapio.StartApplicationKt" />
+        <item itemvalue="Kotlin.br.com.unip.autenticacao.StartApplicationKt" />
+        <item itemvalue="JUnit.EmailTest.teste" />
+        <item itemvalue="Kotlin.br.com.unip.autenticacao.StartApplicationKt" />
+        <item itemvalue="Kotlin.br.com.unip.autenticacao.StartApplicationKt" />
       </list>
     </recent_temporary>
   </component>
@@ -434,8 +507,25 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="EmailTest_teste - 2020.03.05 at 11h 32m 39s.xml">
+      <configuration name="EmailTest.teste" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmailTest_teste - 2020.03.05 at 11h 32m 52s.xml">
+      <configuration name="EmailTest.teste" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="1407" y="-4" width="1559" height="904" extended-state="6" />
+    <frame x="43" y="25" width="1323" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -443,29 +533,31 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.23066755" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.40877056" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info id="DB Browser" order="7" weight="0.32980832" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49966952" weight="0.32947233" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32947233" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5009914" side_tool="true" weight="0.3989704" />
-      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49966952" weight="0.32818532" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="DB Execution Console" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32947233" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.4990086" weight="0.36036035" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Theme Preview" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Commander" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info id="DB Browser" order="7" weight="0.32811275" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49966952" weight="0.3110749" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3243968" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.11119812" side_tool="true" weight="0.8469055" />
+      <window_info active="true" anchor="bottom" id="Messages" order="4" sideWeight="0.49966952" visible="true" weight="0.31433225" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="DB Execution Console" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.26058632" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.32841823" />
+      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.8888019" weight="0.21335505" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32899022" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32958305" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25841817" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -473,471 +565,495 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.23066755" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.40877056" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info id="DB Browser" order="7" weight="0.32980832" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49966952" weight="0.32947233" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32947233" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5009914" side_tool="true" weight="0.3989704" />
-      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49966952" weight="0.32818532" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="DB Execution Console" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32947233" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.4990086" visible="true" weight="0.36036035" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Theme Preview" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Commander" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info id="DB Browser" order="7" weight="0.32811275" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49966952" weight="0.3110749" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3243968" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.11119812" side_tool="true" weight="0.8469055" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49966952" weight="0.31433225" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="DB Execution Console" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.26058632" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.32841823" />
+      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.8888019" visible="true" weight="0.21335505" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32899022" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32958305" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25841817" />
     </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/TokenUtil.kt</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>mapper.readValue(res, response.java)</expression-string>
+        <expression-string>System.getProperty(&quot;profileId&quot;)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>res.body</expression-string>
+        <expression-string>PropertiesLoaderUtils.loadProperties(pom)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>mapper.readValue(res.body, response.java)</expression-string>
+        <expression-string>pom</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>res.</expression-string>
+        <expression-string>System.getProperty(&quot;profile&quot;)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>res</expression-string>
+        <expression-string>System.getProperty(&quot;P&quot;)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>restTemplate.postForEntity&lt;String&gt;(uri, requestJson, String::class)</expression-string>
+        <expression-string>PropertiesLoaderUtils.loadProperties(ClassPathResource(&quot;pom.xml&quot;))</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>requestJson</expression-string>
+        <expression-string>PropertiesLoaderUtils.loadProperties(ClassPathResource(&quot;pom.xml&quot;)).getProperty(&quot;profile&quot;)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>restTemplate.postForEntity&lt;String&gt;(uri, request, String::class)</expression-string>
+        <expression-string>PropertiesLoaderUtils.loadProperties(ClassPathResource(&quot;pom.xml&quot;)).get(&quot;profile&quot;)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>restService.post(&quot;http://localhost:8082/cadastro/api/pessoa-fisica/cadastrar&quot;, dto, String::class)</expression-string>
+        <expression-string>ClassPathResource(&quot;pom.xml&quot;)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/RequestURI.kt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/AutenticacaoBaseException.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/OAuthLoginDomain.kt">
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/entity/Permissao.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/exception/ECodigoErro.kt" />
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/exception/BaseException.kt" />
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/exception/TokenInvalidoException.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/exception/TokenExpiradoException.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/dto/Claims.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="e#41#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/dto/DadosToken.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/resources/db/sql/AUT-002-00.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="e#37#150#0" expanded="true" />
-          </folding>
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/OAuthLoginFirebaseDTO.kt">
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/resources/db/sql/AUT-002-01.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="83" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
+        <state relative-caret-position="323">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/ILoginService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#38#150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/model/request/OAuthLoginRequest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="e#55#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/UsuarioAutenticadoDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="e#43#156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/IUsuarioRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/Senha.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/sql/AUT-002-00.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/entity/Permissao.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="80" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/entity/Usuario.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="50" />
-          <folding>
-            <element signature="e#48#500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/entity/Perfil.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/sql/AUT-002-01.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/ICampo.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/ProviderId.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="79" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/model/request/UsuarioPFRequest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/model/request/UsuarioPJRequest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/UsuarioPJDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/UsuarioService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="35" column="71" lean-forward="true" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/IUsuarioPJService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/UsuarioPJService.kt">
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/dto/CadastroDTO.kt" />
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/service/IUsuarioService.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/IUsuarioDTO.kt">
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/ICadastroRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="136">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/IUsuarioService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#38#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/CampoNumerico.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/OAuthLoginDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/model/request/LoginRequest.kt">
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/util/GeradorTokenUtil.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="43" />
-          <folding>
-            <element signature="e#55#168#0" expanded="true" />
-          </folding>
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/PessoaFisicaDomain.kt">
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/IUsuarioRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="306">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/IPessoaRepository.kt">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/lib/maven-model-builder-3.3.9.jar!/org/apache/maven/model/pom-4.0.0.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="195">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/util/TokenUtil.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="e#35#815#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/firebase/FirebaseEmailSenhaDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/LoginFirebaseDomain.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/FirebaseRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/UsuarioDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/LoginWS.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/LoginService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/UsuarioRepositoryBean.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
-          <folding>
-            <element signature="e#41#446#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/UsuarioDomain.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="e#37#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/IFirebaseRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/IPessoaDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/exception/ECodigoErro.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8-sources.jar!/com/fasterxml/jackson/databind/ObjectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="3212" column="18" selection-start-line="3212" selection-start-column="18" selection-end-line="3212" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/PessoaFisicaDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="e#34#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/IRestService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/client/RestOperationsExtensionsKt.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="33" column="89" selection-start-line="33" selection-start-column="89" selection-end-line="33" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto/PessoaJuridicaDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="e#34#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/RestService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/repository/PessoaRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="e#41#236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service/UsuarioService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="59" column="62" lean-forward="true" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/webservice/UsuarioWS.kt">
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/wait-for-mysql.sh" />
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/HandlerException.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/entity/Usuario.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/model/response/erro/Erro.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/CadastroRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="e#45#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/RestRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/autenticacao-lib.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/configuration/DataSourceConfiguration.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/UrlServicos.kt" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/google-credentials.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="136" column="12" selection-start-line="136" selection-start-column="12" selection-end-line="136" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/resources/configuration.properties" />
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/resources/configuration-docker.properties" />
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/AuthenticationToken.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/AuthenticationUtil.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/PropertiesUtil.kt" />
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/FirebaseRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="27" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/UsuarioRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/service/UsuarioService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+          <folding>
+            <element signature="e#42#1027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/service/LoginService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/LoginWS.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/TokenUtil.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding>
+            <element signature="e#42#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/UsuarioWS.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="e#45#792#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="230" column="20" selection-start-line="230" selection-start-column="20" selection-end-line="232" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/AuthenticationConfig.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/resources/application-docker.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/resources/application-local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/repository/AutenticacaoRestRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="e#48#532#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/filter/AuthenticationFilter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="29" column="81" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/SecurityConfiguration.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding>
+            <element signature="e#43#775#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Kotlin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>autenticacao-lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
