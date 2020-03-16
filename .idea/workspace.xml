@@ -3,44 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60785265-7743-4b00-8f7b-94500422d85a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/UrlServicos.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/repository/AutenticacaoRestRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/repository/AutenticacaoRestRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/TokenUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/TokenUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-lib/target/autenticacao-lib-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/target/autenticacao-lib-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/UrlServicos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/repository/AutenticacaoRestRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/repository/AutenticacaoRestRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/util/TokenUtil$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/util/TokenUtil$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/util/TokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/target/classes/br/com/unip/autenticacaolib/util/TokenUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autenticacao-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/HandlerException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/HandlerException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/SecurityConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/SecurityConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/filter/AuthenticationFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/filter/AuthenticationFilter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/LoginWS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/LoginWS.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/autenticacao-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/autenticacao-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/META-INF/autenticacao-service.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/META-INF/autenticacao-service.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/exception/HandlerException.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/exception/HandlerException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/CadastroRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/CadastroRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/FirebaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/FirebaseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/ICadastroRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/ICadastroRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/IRestRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/IRestRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/IUsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/IUsuarioRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/RestRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/RestRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/repository/UsuarioRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/security/SecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/security/filter/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/security/filter/AuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/service/IUsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/service/IUsuarioService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/service/UsuarioService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/util/GeradorTokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/util/GeradorTokenUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/webservice/LoginWS.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/webservice/LoginWS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/webservice/UsuarioWS.class" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/classes/br/com/unip/autenticacao/webservice/UsuarioWS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.CampoObrigatorioTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.CampoObrigatorioTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.EmailTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.EmailTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.SenhaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/TEST-br.com.unip.autenticacao.domain.campos.SenhaTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.CampoObrigatorioTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.CampoObrigatorioTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.EmailTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.EmailTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.SenhaTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/target/surefire-reports/br.com.unip.autenticacao.domain.campos.SenhaTest.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/autencacao-lib/target/" />
@@ -68,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/SecurityConfiguration.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+            <state relative-caret-position="216">
+              <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
               <folding>
                 <element signature="e#43#775#0" expanded="true" />
               </folding>
@@ -81,19 +44,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autenticacao-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="230" column="20" selection-start-line="230" selection-start-column="20" selection-end-line="232" selection-end-column="62" />
+            <state relative-caret-position="238">
+              <caret line="126" column="12" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/autenticacao-service/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="59" />
+            <state>
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -121,9 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>@Value</find>
-      <find>late</find>
-      <find>heade</find>
       <find>fasterxml</find>
       <find>exMultiValueMap</find>
       <find>apikey</find>
@@ -151,6 +116,9 @@
       <find>spring-boo</find>
       <find>spring-boor</find>
       <find>@Val</find>
+      <find>dockerfile-maven-</find>
+      <find>dockerfile-maven-plugin</find>
+      <find>dockerfi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -206,10 +174,10 @@
         <option value="$PROJECT_DIR$/autenticacao-service/src/main/resources/application-local.properties" />
         <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/webservice/LoginWS.kt" />
         <option value="$PROJECT_DIR$/autenticacao-service/Dockerfile" />
-        <option value="$PROJECT_DIR$/autenticacao-service/pom.xml" />
         <option value="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/repository/AutenticacaoRestRepository.kt" />
         <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/filter/AuthenticationFilter.kt" />
         <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/SecurityConfiguration.kt" />
+        <option value="$PROJECT_DIR$/autenticacao-service/pom.xml" />
       </list>
     </option>
   </component>
@@ -246,131 +214,7 @@
             <path>
               <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
               <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacaolib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacaolib" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacaolib" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
               <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="webservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
-              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -379,7 +223,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584377900312" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584382487503" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../atualizacao-taxas" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -540,7 +384,7 @@
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49966952" weight="0.3110749" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.3243968" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.11119812" side_tool="true" weight="0.8469055" />
-      <window_info active="true" anchor="bottom" id="Messages" order="4" sideWeight="0.49966952" visible="true" weight="0.31433225" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49966952" weight="0.31433225" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="DB Execution Console" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.26058632" />
@@ -565,19 +409,19 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.40877056" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.40877056" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="7" weight="0.32811275" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49966952" weight="0.3110749" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.3243968" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.11119812" side_tool="true" weight="0.8469055" />
-      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49966952" weight="0.31433225" />
+      <window_info active="true" anchor="bottom" id="Messages" order="4" sideWeight="0.49966952" visible="true" weight="0.31433225" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="DB Execution Console" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.26058632" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.32841823" />
-      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.8888019" visible="true" weight="0.21335505" />
+      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.8888019" weight="0.21335505" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32899022" />
@@ -819,9 +663,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/UrlServicos.kt" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/autenticacao-service/google-credentials.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -907,20 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autenticacao-service/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autenticacao-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="230" column="20" selection-start-line="230" selection-start-column="20" selection-end-line="232" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/AuthenticationConfig.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -968,11 +795,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/SecurityConfiguration.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        <state relative-caret-position="216">
+          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
           <folding>
             <element signature="e#43#775#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="126" column="12" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
