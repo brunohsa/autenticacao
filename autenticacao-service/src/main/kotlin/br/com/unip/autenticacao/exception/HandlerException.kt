@@ -24,6 +24,7 @@ class HandlerException(val mapper: ObjectMapper, val messageSource: MessageSourc
     @ExceptionHandler(Throwable::class)
     fun handlerErroInesperado(e: Throwable): ResponseEntity<ResponseError> {
         val erro = getErro(ERRO_INESPERADO)
+        System.out.println(e.message)
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ResponseError(erro))
     }
 

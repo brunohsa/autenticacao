@@ -1,6 +1,6 @@
 package br.com.unip.autenticacaolib.repository
 
-import br.com.unip.autenticacaolib.UrlServicos.URL_AUTENTICACAO
+import br.com.unip.autenticacaolib.AuthenticationConfig
 import org.springframework.http.HttpEntity
 import org.springframework.http.HttpHeaders
 import org.springframework.http.HttpMethod.GET
@@ -11,9 +11,9 @@ import org.springframework.util.MultiValueMap
 import org.springframework.web.client.RestTemplate
 import org.springframework.web.util.UriComponentsBuilder
 
-class AutenticacaoRestRepository {
+class AutenticacaoRestRepository(val authConfig: AuthenticationConfig) {
 
-    private val AUTENTICAR_PATH = "$URL_AUTENTICACAO/v1/autenticar"
+    private val AUTENTICAR_PATH = "v1/autenticar"
     private val TOKEN_PARAM = "token"
     private val API_KEY_PARAM = "key"
 
@@ -21,7 +21,8 @@ class AutenticacaoRestRepository {
         val map = LinkedMultiValueMap<String, String>()
         map.add(API_KEY_PARAM, apikey)
 
-        val response = get("$AUTENTICAR_PATH/oauth", map)
+        val url = authConfig.urlAutenticacao
+        val response = get("$url$AUTENTICAR_PATH/oauth", map)
         return response.headers.getFirst(TOKEN_PARAM)!!
     }
 

@@ -5,11 +5,14 @@ import br.com.unip.autenticacao.exception.ECodigoErro
 import br.com.unip.autenticacao.exception.ECodigoErro.TOKEN_EXPIRADO
 import br.com.unip.autenticacao.exception.ECodigoErro.TOKEN_INVALIDO
 import br.com.unip.autenticacao.webservice.model.response.erro.Erro
+import br.com.unip.autenticacaolib.AuthenticationConfig
 import br.com.unip.autenticacaolib.exception.TokenExpiradoException
 import br.com.unip.autenticacaolib.exception.TokenInvalidoException
 import br.com.unip.autenticacaolib.util.TokenUtil
 import com.fasterxml.jackson.databind.ObjectMapper
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.MessageSource
+import org.springframework.core.env.Environment
 import org.springframework.http.HttpStatus
 import org.springframework.http.HttpStatus.FORBIDDEN
 import org.springframework.http.HttpStatus.UNAUTHORIZED
@@ -24,7 +27,9 @@ import javax.servlet.ServletResponse
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-class AuthenticationFilter(val messageSource: MessageSource) : GenericFilterBean() {
+class AuthenticationFilter(val messageSource: MessageSource, val env: Environment) : GenericFilterBean() {
+
+    private val AUTH_URL_PROPERTY = "microservice.autenticacao.url"
 
     private val PT = "pt"
     private val BR = "BR"
@@ -32,7 +37,8 @@ class AuthenticationFilter(val messageSource: MessageSource) : GenericFilterBean
     @Throws(TokenExpiradoException::class, TokenInvalidoException::class)
     override fun doFilter(request: ServletRequest, response: ServletResponse, filterChain: FilterChain) {
         try {
-            val authentication = TokenUtil().getAuthentication(request as HttpServletRequest)
+            val config = AuthenticationConfig(env.getProperty(AUTH_URL_PROPERTY)!!)
+            val authentication = TokenUtil(config).getAuthentication(request as HttpServletRequest)
             SecurityContextHolder.getContext().authentication = authentication
             filterChain.doFilter(request, response)
         } catch (e: TokenExpiradoException) {

@@ -1,5 +1,6 @@
 package br.com.unip.autenticacaolib.util
 
+import br.com.unip.autenticacaolib.AuthenticationConfig
 import br.com.unip.autenticacaolib.AuthenticationToken
 import br.com.unip.autenticacaolib.dto.DadosToken
 import br.com.unip.autenticacaolib.exception.TokenExpiradoException
@@ -12,7 +13,7 @@ import java.time.LocalDateTime
 import java.util.Base64
 import javax.servlet.http.HttpServletRequest
 
-class TokenUtil {
+class TokenUtil(val authConfig: AuthenticationConfig) {
 
     companion object {
         private var cacheMap: HashMap<String, DadosToken> = HashMap()
@@ -62,7 +63,7 @@ class TokenUtil {
     }
 
     private fun buscarNovoToken(apiKey: String): DadosToken {
-        val token = AutenticacaoRestRepository().getTokenPorApikey(apiKey)
+        val token = AutenticacaoRestRepository(authConfig).getTokenPorApikey(apiKey)
         return getDadosToken(token)
     }
 

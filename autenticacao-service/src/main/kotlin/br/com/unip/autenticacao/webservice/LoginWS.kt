@@ -3,6 +3,7 @@ package br.com.unip.autenticacao.webservice
 import br.com.unip.autenticacao.dto.firebase.LoginDTO
 import br.com.unip.autenticacao.service.ILoginService
 import br.com.unip.autenticacao.webservice.model.request.LoginRequest
+import br.com.unip.autenticacaolib.repository.AutenticacaoRestRepository
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -38,7 +39,6 @@ class LoginWS(val loginService: ILoginService) {
     @GetMapping(value = ["/oauth"])
     fun oauth(@RequestParam("key") key: String, response: HttpServletResponse): ResponseEntity<String> {
         val token = loginService.autenticarOAuth(key)
-
         this.montarHeader(response, token)
         return ResponseEntity.ok().build()
     }

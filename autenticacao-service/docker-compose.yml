@@ -1,0 +1,27 @@
+version: "3.3"
+services:
+  #  mysql:
+  #    container_name: mysql
+  #    image: mysql:latest
+  #    environment:
+  #      MYSQL_ROOT_PASSWORD: 1234
+  #      MYSQL_DATABASE: Autenticacao
+  #      MYSQL_USER: root
+  #      MYSQL_PASSWORD: 1234
+  #    restart: always
+  #    networks:
+  #      - autenticacao
+  #    ports:
+  #      - "3306:3306"
+  microservice:
+    build:
+      "./"
+    container_name: autenticacao-ms
+    networks:
+      - autenticacao
+    ports:
+      - "8081:8081"
+
+networks:
+  autenticacao:
+    external: true
