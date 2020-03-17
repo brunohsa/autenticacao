@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="60785265-7743-4b00-8f7b-94500422d85a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autenticacao-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/google-credentials.json" beforeDir="false" afterPath="$PROJECT_DIR$/google-credentials.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/autencacao-lib/target/" />
@@ -51,17 +53,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autenticacao-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="126" column="12" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="12" />
+            <state relative-caret-position="34">
+              <caret line="114" column="21" lean-forward="true" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/autenticacao-service/Dockerfile">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
+            <state relative-caret-position="170">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -117,8 +119,8 @@
       <find>spring-boor</find>
       <find>@Val</find>
       <find>dockerfile-maven-</find>
-      <find>dockerfile-maven-plugin</find>
       <find>dockerfi</find>
+      <find>dockerfile-maven-plugin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/DataPassadaException.kt" />
         <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/DataRetroativaException.kt" />
         <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/TokenExpiradoException.kt" />
         <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/TokenInvalidoException.kt" />
@@ -178,6 +179,7 @@
         <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/filter/AuthenticationFilter.kt" />
         <option value="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/security/SecurityConfiguration.kt" />
         <option value="$PROJECT_DIR$/autenticacao-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
       </list>
     </option>
   </component>
@@ -216,6 +218,12 @@
               <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
               <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="autenticacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autenticacao" type="462c0819:PsiDirectoryNode" />
+              <item name="autenticacao-service" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -223,19 +231,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584382487503" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584464402775" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../atualizacao-taxas" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/autenticacao-service/src/main/resources" />
-      <recent name="$PROJECT_DIR$/autenticacao-lib/src/main/resources" />
-      <recent name="$PROJECT_DIR$/autenticacao-service" />
-      <recent name="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacao/exception" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/cardapio" />
+      <recent name="$PROJECT_DIR$/autenticacao-service" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="br.com.unip.autenticacaolib" />
@@ -251,9 +257,12 @@
       <recent name="br.com.unip.autenticacaolib" />
       <recent name="br.com.unip.autenticacao.exception" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/cardapio" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/autenticacao-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/autenticacao-lib/src/main/resources" />
       <recent name="$PROJECT_DIR$/autenticacao-service" />
+      <recent name="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacao/exception" />
+      <recent name="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/cardapio" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -377,7 +386,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.40877056" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.40877056" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="7" weight="0.32811275" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -502,13 +511,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/exception/AutenticacaoBaseException.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/repository/entity/Permissao.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -645,7 +647,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autenticacao-service/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
@@ -663,7 +665,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/UrlServicos.kt" />
-    <entry file="file://$PROJECT_DIR$/autenticacao-service/google-credentials.json">
+    <entry file="file://$PROJECT_DIR$/google-credentials.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/autenticacao-lib/pom.xml">
@@ -806,17 +808,24 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/autenticacao-service/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-maven-plugin/1.3.50/kotlin-maven-plugin-1.3.50.jar!/META-INF/maven/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="126" column="12" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="12" />
+        <state relative-caret-position="195">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autenticacao-service/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/autenticacao-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        <state relative-caret-position="34">
+          <caret line="114" column="21" lean-forward="true" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
         </state>
       </provider>
     </entry>
