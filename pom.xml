@@ -85,7 +85,7 @@
             <id>aws</id>
             <properties>
                 <activatedProperties>aws</activatedProperties>
-                <liquibase.url>jdbc:mysql://54.94.153.129:3306/Autenticacao</liquibase.url>
+                <liquibase.url>jdbc:mysql://172.31.1.16:3306/Autenticacao</liquibase.url>
                 <liquibase.username>jenkins</liquibase.username>
                 <liquibase.password>jenkins@123</liquibase.password>
             </properties>
