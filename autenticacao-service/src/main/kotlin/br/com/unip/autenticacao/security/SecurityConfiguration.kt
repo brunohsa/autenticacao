@@ -20,7 +20,13 @@ class SecurityConfiguration(val messageSource: MessageSource, val env: Environme
                                                "/v1/autenticar/oauth",
                                                "/v1/autenticar/facebook",
                                                "/v1/usuarios/cadastrar/cliente",
-                                               "/v1/usuarios/cadastrar/fornecedor"
+                                               "/v1/usuarios/cadastrar/fornecedor",
+                                               "/swagger-ui.html",
+                                               "/v2/api-docs",
+                                               "/swagger-resources/configuration/ui",
+                                               "/swagger-resources",
+                                               "/swagger-resources/configuration/security",
+                                               "/webjars/**"
         )
     }
 

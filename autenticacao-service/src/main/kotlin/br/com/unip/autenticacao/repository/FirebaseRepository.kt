@@ -5,11 +5,12 @@ import br.com.unip.autenticacao.domain.UsuarioDomain
 import br.com.unip.autenticacao.dto.firebase.FirebaseEmailSenhaDTO
 import br.com.unip.autenticacao.dto.firebase.OAuthLoginDTO
 import br.com.unip.autenticacao.dto.firebase.UsuarioAutenticadoDTO
+import br.com.unip.autenticacao.service.IRestService
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Repository
 
 @Repository
-class FirebaseRepository(val restRepository: IRestRepository) : IFirebaseRepository {
+class FirebaseRepository(val restService: IRestService) : IFirebaseRepository {
 
     @Value("\${firebase.api.key}")
     private val keyAPI = ""
@@ -28,17 +29,17 @@ class FirebaseRepository(val restRepository: IRestRepository) : IFirebaseReposit
 
     override fun autenticar(domain: LoginFirebaseDomain): UsuarioAutenticadoDTO {
         val request = FirebaseEmailSenhaDTO(domain.email.get(), domain.senha.get())
-        return restRepository.post(urlLogin + keyAPI, request, UsuarioAutenticadoDTO::class)
+        return restService.post(urlLogin + keyAPI, request, UsuarioAutenticadoDTO::class)
     }
 
     override fun autenticarOAuth(token: String, provider: String): UsuarioAutenticadoDTO {
         val postBody = "access_token=$token&providerId=$provider"
         val request = OAuthLoginDTO(postBody, requestUri)
-        return restRepository.post(facebookLogin + keyAPI, request, UsuarioAutenticadoDTO::class)
+        return restService.post(facebookLogin + keyAPI, request, UsuarioAutenticadoDTO::class)
     }
 
     override fun cadastrarUsuario(domain: UsuarioDomain) {
         val request = FirebaseEmailSenhaDTO(domain.email.get(), domain.senha.get())
-        restRepository.post(urlCadastro + keyAPI, request)
+        restService.post(urlCadastro + keyAPI, request)
     }
 }

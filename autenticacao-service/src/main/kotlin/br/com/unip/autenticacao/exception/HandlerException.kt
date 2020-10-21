@@ -1,5 +1,6 @@
 package br.com.unip.autenticacao.exception
 
+import br.com.unip.autenticacao.dto.FirebaseErrorDTO
 import br.com.unip.autenticacao.exception.ECodigoErro.ACESSO_NEGADO
 import br.com.unip.autenticacao.exception.ECodigoErro.ERRO_INESPERADO
 import br.com.unip.autenticacao.webservice.model.response.erro.Erro
@@ -42,8 +43,27 @@ class HandlerException(val mapper: ObjectMapper, val messageSource: MessageSourc
 
     @ExceptionHandler(HttpClientErrorException::class)
     fun handlerErroIntegracao(e: HttpClientErrorException): ResponseEntity<Any> {
-        val erro = mapper.readValue<ResponseError>(e.responseBodyAsString, ResponseError::class.java)
+        val codigoErroFirebase = getErrosFirebase(e.responseBodyAsString)
+        val erro = if (codigoErroFirebase != null) {
+            ResponseError(getErro(codigoErroFirebase))
+        } else {
+            mapper.readValue<ResponseError>(e.responseBodyAsString, ResponseError::class.java)
+        }
         return ResponseEntity.status(e.statusCode).body(erro)
+    }
+
+
+    private fun getErrosFirebase(erro: String): ECodigoErro? {
+        val erroFirebase = mapper.readValue<FirebaseErrorDTO>(erro, FirebaseErrorDTO::class.java)
+        val mensagemErro = erroFirebase.error!!.message!!
+
+        return if (mensagemErro.contains(ECodigoErro.INVALID_PASSWORD.name)) {
+            ECodigoErro.INVALID_PASSWORD
+        } else if (mensagemErro.contains(ECodigoErro.TOO_MANY_ATTEMPTS_TRY_LATER.name)) {
+            ECodigoErro.TOO_MANY_ATTEMPTS_TRY_LATER
+        } else {
+            null
+        }
     }
 
     private fun getErro(erro: ECodigoErro): Erro {

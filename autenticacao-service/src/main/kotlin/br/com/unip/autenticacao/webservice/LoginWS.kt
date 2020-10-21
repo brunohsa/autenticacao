@@ -20,7 +20,7 @@ class LoginWS(val loginService: ILoginService) {
     private val TOKEN_TAG = "token"
 
     @PostMapping
-    fun login(@RequestBody request: LoginRequest, response: HttpServletResponse): ResponseEntity<String> {
+    fun login(@RequestBody request: LoginRequest, response: HttpServletResponse): ResponseEntity<Void> {
         val dto = LoginDTO(request.email, request.senha)
         val token = loginService.autenticar(dto)
 
@@ -29,7 +29,7 @@ class LoginWS(val loginService: ILoginService) {
     }
 
     @GetMapping(value = ["/facebook"])
-    fun loginFacebook(@RequestParam("token") tokenFacebook: String, response: HttpServletResponse): ResponseEntity<String> {
+    fun loginFacebook(@RequestParam("token") tokenFacebook: String, response: HttpServletResponse): ResponseEntity<Void> {
         val token = loginService.autenticarViaFacebook(tokenFacebook)
         this.montarHeader(response, token)
 
@@ -37,7 +37,7 @@ class LoginWS(val loginService: ILoginService) {
     }
 
     @GetMapping(value = ["/oauth"])
-    fun oauth(@RequestParam("key") key: String, response: HttpServletResponse): ResponseEntity<String> {
+    fun oauth(@RequestParam("key") key: String, response: HttpServletResponse): ResponseEntity<Void> {
         val token = loginService.autenticarOAuth(key)
         this.montarHeader(response, token)
         return ResponseEntity.ok().build()

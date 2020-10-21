@@ -10,7 +10,6 @@ import br.com.unip.autenticacao.exception.CampoInvalidoException
 import br.com.unip.autenticacao.exception.CampoObrigatorioNaoInformadoException
 import br.com.unip.autenticacao.exception.ECodigoErro.DADOS_DA_PESSOA_SAO_OBRIGATORIOS
 import br.com.unip.autenticacao.exception.ECodigoErro.USUARIO_JA_CADASTRADO
-import br.com.unip.autenticacao.repository.CadastroRepository
 import br.com.unip.autenticacao.repository.IFirebaseRepository
 import br.com.unip.autenticacao.repository.IUsuarioRepository
 import br.com.unip.autenticacao.repository.entity.enums.EPerfis
@@ -20,7 +19,7 @@ import org.springframework.stereotype.Service
 @Service
 class UsuarioService(val usuarioRepository: IUsuarioRepository,
                      val firebaseService: IFirebaseRepository,
-                     val cadastroRepository: CadastroRepository) : IUsuarioService {
+                     val cadastroService: CadastroService) : IUsuarioService {
 
     override fun cadastrarConsumidor(usuario: UsuarioDTO) {
         val perfis = EPerfis.perfisConsumidor()
@@ -60,9 +59,9 @@ class UsuarioService(val usuarioRepository: IUsuarioRepository,
             throw CampoObrigatorioNaoInformadoException(DADOS_DA_PESSOA_SAO_OBRIGATORIOS)
         }
         if (pessoa is PessoaFisicaDTO) {
-            return cadastroRepository.cadastrar(pessoa)
+            return cadastroService.cadastrar(pessoa)
         }
-        return cadastroRepository.cadastrar(pessoa as PessoaJuridicaDTO)
+        return cadastroService.cadastrar(pessoa as PessoaJuridicaDTO)
     }
 
     override fun buscarPermissoes(email: String): List<PermissaoDTO> {

@@ -68,9 +68,6 @@
                 <liquibase.username>root</liquibase.username>
                 <liquibase.password>1234</liquibase.password>
             </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
         </profile>
         <profile>
             <id>docker</id>

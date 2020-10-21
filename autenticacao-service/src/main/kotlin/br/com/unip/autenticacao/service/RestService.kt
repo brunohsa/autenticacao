@@ -1,4 +1,4 @@
-package br.com.unip.autenticacao.repository
+package br.com.unip.autenticacao.service
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.http.HttpEntity
@@ -13,7 +13,7 @@ import kotlin.reflect.KClass
 
 
 @Repository
-class RestRepository(val mapper: ObjectMapper) : IRestRepository {
+class RestService(val mapper: ObjectMapper) : IRestService {
 
     private val restTemplate = RestTemplate()
 

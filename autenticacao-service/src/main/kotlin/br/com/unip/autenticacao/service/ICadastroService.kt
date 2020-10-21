@@ -1,9 +1,9 @@
-package br.com.unip.autenticacao.repository
+package br.com.unip.autenticacao.service
 
 import br.com.unip.autenticacao.dto.PessoaFisicaDTO
 import br.com.unip.autenticacao.dto.PessoaJuridicaDTO
 
-interface ICadastroRepository {
+interface ICadastroService {
 
     fun cadastrar(dto : PessoaFisicaDTO) : String
 
