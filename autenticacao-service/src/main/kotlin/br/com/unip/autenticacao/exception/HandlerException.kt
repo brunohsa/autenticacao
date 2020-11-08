@@ -55,14 +55,21 @@ class HandlerException(val mapper: ObjectMapper, val messageSource: MessageSourc
 
     private fun getErrosFirebase(erro: String): ECodigoErro? {
         val erroFirebase = mapper.readValue<FirebaseErrorDTO>(erro, FirebaseErrorDTO::class.java)
-        val mensagemErro = erroFirebase.error!!.message!!
+        if (erroFirebase.error == null) {
+            return null
+        }
 
-        return if (mensagemErro.contains(ECodigoErro.INVALID_PASSWORD.name)) {
-            ECodigoErro.INVALID_PASSWORD
-        } else if (mensagemErro.contains(ECodigoErro.TOO_MANY_ATTEMPTS_TRY_LATER.name)) {
-            ECodigoErro.TOO_MANY_ATTEMPTS_TRY_LATER
-        } else {
-            null
+        val mensagemErro = erroFirebase.error!!.message!!
+        return when {
+            mensagemErro.contains(ECodigoErro.INVALID_PASSWORD.name) -> {
+                ECodigoErro.INVALID_PASSWORD
+            }
+            mensagemErro.contains(ECodigoErro.TOO_MANY_ATTEMPTS_TRY_LATER.name) -> {
+                ECodigoErro.TOO_MANY_ATTEMPTS_TRY_LATER
+            }
+            else -> {
+                null
+            }
         }
     }
 
