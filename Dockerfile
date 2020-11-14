@@ -1,9 +1,11 @@
 # Dockerfile
 FROM openjdk:11-jre
 
-#RUN docker network create -d bridge autenticacao
+#RUN docker network create -d bridge appetito
 
 RUN mkdir app
+
+EXPOSE 8081
 
 ADD google-credentials.json /app/google-credentials.json
 ENV GOOGLE_APPLICATION_CREDENTIALS="/app/google-credentials.json"
