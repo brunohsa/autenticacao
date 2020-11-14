@@ -1,5 +1,6 @@
 package br.com.unip.autenticacao.util
 
+import br.com.unip.autenticacao.dto.DadosAutenticacaoDTO
 import br.com.unip.autenticacao.dto.firebase.UsuarioAutenticadoDTO
 import br.com.unip.autenticacao.service.IUsuarioService
 import com.google.firebase.auth.FirebaseAuth
@@ -9,7 +10,7 @@ import java.util.HashMap
 @Component
 class GeradorTokenUtil(val usuarioService: IUsuarioService) {
 
-    fun gerar(usuarioAutenticado: UsuarioAutenticadoDTO): String {
+    fun gerar(usuarioAutenticado: UsuarioAutenticadoDTO): DadosAutenticacaoDTO {
         val usuario = usuarioService.buscar(usuarioAutenticado.email)
 
         val additionalClaims = HashMap<String, Any?>()
@@ -18,7 +19,8 @@ class GeradorTokenUtil(val usuarioService: IUsuarioService) {
         additionalClaims["cadastro_uuid"] = usuario.cadastroUUID
         additionalClaims["usuario_uuid"] = usuario.uuid
 
-        return FirebaseAuth.getInstance().createCustomToken(usuarioAutenticado.localId, additionalClaims)
+        val token = FirebaseAuth.getInstance().createCustomToken(usuarioAutenticado.localId, additionalClaims)
+        return DadosAutenticacaoDTO(usuario.email, usuario.cadastroUUID, token)
     }
 
     private fun buscarPremissoes(email: String): Set<String> {

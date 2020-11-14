@@ -2,6 +2,7 @@ package br.com.unip.autenticacao.service
 
 import br.com.unip.autenticacao.configuration.FirebaseProvider.FACEBOOK_PROVIDER
 import br.com.unip.autenticacao.domain.LoginFirebaseDomain
+import br.com.unip.autenticacao.dto.DadosAutenticacaoDTO
 import br.com.unip.autenticacao.dto.PessoaFisicaDTO
 import br.com.unip.autenticacao.dto.UsuarioDTO
 import br.com.unip.autenticacao.dto.firebase.LoginDTO
@@ -15,19 +16,19 @@ class LoginService(val firebaseRepository: IFirebaseRepository,
                    val tokenUtil: GeradorTokenUtil,
                    val usuarioService: IUsuarioService) : ILoginService {
 
-    override fun autenticar(dto: LoginDTO): String {
+    override fun autenticar(dto: LoginDTO): DadosAutenticacaoDTO {
         val domain = LoginFirebaseDomain(dto.email, dto.senha)
         val usuarioAutenticado = firebaseRepository.autenticar(domain)
         return tokenUtil.gerar(usuarioAutenticado)
     }
 
-    override fun autenticarOAuth(apikey: String): String {
+    override fun autenticarOAuth(apikey: String): DadosAutenticacaoDTO {
         val usuario = usuarioService.buscarPorApiKey(apikey)
         val login = LoginDTO(usuario.email!!, usuario.senha!!)
         return autenticar(login)
     }
 
-    override fun autenticarViaFacebook(token: String): String {
+    override fun autenticarViaFacebook(token: String): DadosAutenticacaoDTO {
         val usuarioAutenticado = firebaseRepository.autenticarOAuth(token, FACEBOOK_PROVIDER)
         this.cadastrarCasoNaoPossuaCadastro(usuarioAutenticado)
 
