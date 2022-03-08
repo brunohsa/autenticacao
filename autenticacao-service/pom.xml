@@ -22,7 +22,7 @@
         <io-jwt.version>0.9.1</io-jwt.version>
         <mysql-connector>8.0.17</mysql-connector>
         <jaxb.version>2.3.0</jaxb.version>
-        <liquibase.version>3.5.3</liquibase.version>
+        <liquibase.version>4.8.0</liquibase.version>
     </properties>
 
     <dependencies>
