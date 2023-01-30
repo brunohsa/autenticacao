@@ -37,8 +37,7 @@ class UsuarioService(val usuarioRepository: IUsuarioRepository,
         val usuarioDomain = UsuarioDomain(usuario.email, usuario.senha, ATIVO, perfis)
         validarSeUsuarioJaEstaCadastrado(usuarioDomain.email.get())
 
-        //val uuid: String = this.cadastrarPessoa(usuario.pessoa)
-        val uuid: String = UUID.randomUUID().toString()
+        val uuid: String = this.cadastrarPessoa(usuario.pessoa)
         usuarioRepository.criar(usuarioDomain, uuid)
 
         if (cadastrarNoFirebase) {
