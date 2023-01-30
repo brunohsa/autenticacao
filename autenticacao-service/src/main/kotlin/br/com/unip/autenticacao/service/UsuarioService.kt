@@ -1,11 +1,7 @@
 package br.com.unip.autenticacao.service
 
 import br.com.unip.autenticacao.domain.UsuarioDomain
-import br.com.unip.autenticacao.dto.IPessoaDTO
-import br.com.unip.autenticacao.dto.PermissaoDTO
-import br.com.unip.autenticacao.dto.PessoaFisicaDTO
-import br.com.unip.autenticacao.dto.PessoaJuridicaDTO
-import br.com.unip.autenticacao.dto.UsuarioDTO
+import br.com.unip.autenticacao.dto.*
 import br.com.unip.autenticacao.exception.CampoInvalidoException
 import br.com.unip.autenticacao.exception.CampoObrigatorioNaoInformadoException
 import br.com.unip.autenticacao.exception.ECodigoErro.DADOS_DA_PESSOA_SAO_OBRIGATORIOS
@@ -16,21 +12,20 @@ import br.com.unip.autenticacao.repository.IUsuarioRepository
 import br.com.unip.autenticacao.repository.entity.enums.EPerfis
 import br.com.unip.autenticacao.repository.entity.enums.ESituacaoUsuario.ATIVO
 import org.springframework.stereotype.Service
-import java.util.UUID
 
 @Service
-class UsuarioService(val usuarioRepository: IUsuarioRepository,
-                     val firebaseService: IFirebaseRepository,
-                     val cadastroRepository: CadastroRepository) : IUsuarioService {
+class UsuarioService(
+    val usuarioRepository: IUsuarioRepository,
+    val firebaseService: IFirebaseRepository,
+    val cadastroRepository: CadastroRepository
+) : IUsuarioService {
 
     override fun cadastrarConsumidor(usuario: UsuarioDTO) {
-        val perfis = EPerfis.perfisConsumidor()
-        cadastrarUsuario(usuario, perfis, true)
+        this.cadastrarUsuario(usuario, EPerfis.perfisConsumidor(), true)
     }
 
     override fun cadastrarFornecedor(usuario: UsuarioDTO) {
-        val perfis = EPerfis.perfisFornecedor()
-        cadastrarUsuario(usuario, perfis, true)
+        this.cadastrarUsuario(usuario, EPerfis.perfisFornecedor(), true)
     }
 
     private fun cadastrarUsuario(usuario: UsuarioDTO, perfis: List<String>, cadastrarNoFirebase: Boolean) {

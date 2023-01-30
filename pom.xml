@@ -65,7 +65,7 @@
             <properties>
                 <activatedProperties>local</activatedProperties>
                 <liquibase.url>jdbc:mysql://localhost:3306/Autenticacao</liquibase.url>
-                <liquibase.username>root</liquibase.username>
+                <liquibase.username>autenticacao</liquibase.username>
                 <liquibase.password>1234</liquibase.password>
             </properties>
             <activation>
@@ -77,7 +77,7 @@
             <properties>
                 <activatedProperties>docker</activatedProperties>
                 <liquibase.url>jdbc:mysql://mysql:3306/Autenticacao</liquibase.url>
-                <liquibase.username>root</liquibase.username>
+                <liquibase.username>autenticacao</liquibase.username>
                 <liquibase.password>1234</liquibase.password>
             </properties>
         </profile>

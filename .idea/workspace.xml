@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="035128be-ad2b-442c-bf46-afd7ef9d2dad" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="035128be-ad2b-442c-bf46-afd7ef9d2dad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-lib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/TokenUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-lib/src/main/kotlin/br/com/unip/autenticacaolib/util/TokenUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/service/UsuarioService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/service/UsuarioService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-credentials.json" beforeDir="false" afterPath="$PROJECT_DIR$/google-credentials.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,71 +33,75 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Program Files/apache-maven-3.8.7" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="17" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1TtCVK8KgGfRpeqjHaicuSYO2iG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573356191063" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/db/sql" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workspace/gateway&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  }
+}</component>
   <component name="RecentsManager">
-    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="br.com.unip.cardapio.webservice.model.response" />
-      <recent name="br.com.unip.cardapio.repository" />
-      <recent name="br.com.unip.cardapio.service" />
-      <recent name="br.com.unip.cardapio.dto" />
-      <recent name="br.com.unip.cardapio.webservice.model.request" />
-    </key>
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="br.com.unip.cardapio.repository" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace\autenticacao\src\main\resources\db\sql" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="br.com.unip.cardapio.repository" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="br.com.unip.autenticacaolib.client" />
+      <recent name="br.com.unip.cardapio.webservice.model.response" />
+      <recent name="br.com.unip.cardapio.repository" />
+      <recent name="br.com.unip.cardapio.service" />
+      <recent name="br.com.unip.cardapio.dto" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="br.com.unip.cardapio.StartApplicationKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="autenticacao" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="br.com.unip.cardapio.StartApplicationKt" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration name="Local" type="JetRunConfigurationType">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="br.com.unip.autenticacao.StartApplicationKt" />
+      <module name="autenticacao-service" />
+      <shortenClasspath name="NONE" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=local" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/autenticacao-service" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Kotlin.br.com.unip.cardapio.StartApplicationKt" />
-      </list>
-    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -97,13 +115,30 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:com.google.cloud:google-cloud-storage" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:javax.validation:validation-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
             <State>
-              <option name="COLUMN_ORDER" />
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
             </State>
           </value>
         </entry>
@@ -132,6 +167,24 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/security/SecurityConfiguration.kt</url>
           <line>18</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/service/IUsuarioService.kt</url>
+          <line>13</line>
+          <properties class="br.com.unip.autenticacao.service.IUsuarioService" method="usuarioCadastrado">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/autenticacao-service/src/main/kotlin/br/com/unip/autenticacao/service/ILoginService.kt</url>
+          <line>8</line>
+          <properties class="br.com.unip.autenticacao.service.ILoginService" method="autenticarOAuth">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

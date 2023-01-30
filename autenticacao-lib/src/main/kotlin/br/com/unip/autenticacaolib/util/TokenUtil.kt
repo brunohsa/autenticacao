@@ -7,11 +7,11 @@ import br.com.unip.autenticacaolib.exception.TokenExpiradoException
 import br.com.unip.autenticacaolib.exception.TokenInvalidoException
 import br.com.unip.autenticacaolib.repository.AutenticacaoRestRepository
 import com.fasterxml.jackson.databind.ObjectMapper
+import jakarta.servlet.http.HttpServletRequest
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import java.sql.Timestamp
 import java.time.LocalDateTime
-import java.util.Base64
-import javax.servlet.http.HttpServletRequest
+import java.util.*
 
 class TokenUtil(val authConfig: AuthenticationConfig) {
 
