@@ -8,7 +8,5 @@ interface IFirebaseRepository {
 
     fun autenticar(domain : LoginFirebaseDomain) : UsuarioAutenticadoDTO
 
-    fun autenticarOAuth(token: String, provider: String) : UsuarioAutenticadoDTO
-
     fun cadastrarUsuario(domain: UsuarioDomain)
 }

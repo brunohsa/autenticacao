@@ -13,8 +13,6 @@ interface IUsuarioService {
 
     fun usuarioCadastrado(email: String): Boolean
 
-    fun cadastrarUsuarioOAuth(usuario: UsuarioDTO)
-
     fun buscar(email: String) : UsuarioDTO
 
     fun buscarPorApiKey(apiKey: String) : UsuarioDTO

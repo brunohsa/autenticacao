@@ -7,6 +7,4 @@ interface ILoginService {
     fun autenticar(dto : LoginDTO) : String
 
     fun autenticarOAuth(apikey : String) : String
-
-    fun autenticarViaFacebook(token: String) : String
 }

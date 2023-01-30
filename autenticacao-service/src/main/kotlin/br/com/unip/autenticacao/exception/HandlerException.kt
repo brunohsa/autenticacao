@@ -8,12 +8,11 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.context.MessageSource
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
-import org.springframework.security.access.AccessDeniedException
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException
 import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.client.HttpClientErrorException
-import java.util.Locale
+import java.util.*
 
 @ControllerAdvice
 class HandlerException(val mapper: ObjectMapper, val messageSource: MessageSource) {
@@ -42,7 +41,11 @@ class HandlerException(val mapper: ObjectMapper, val messageSource: MessageSourc
 
     @ExceptionHandler(HttpClientErrorException::class)
     fun handlerErroIntegracao(e: HttpClientErrorException): ResponseEntity<Any> {
-        val erro = mapper.readValue<ResponseError>(e.responseBodyAsString, ResponseError::class.java)
+        val erroString  = e.responseBodyAsString
+        if(erroString.contains("error")) {
+            return ResponseEntity.status(e.statusCode).body(erroString)
+        }
+        val erro = mapper.readValue<ResponseError>(erroString, ResponseError::class.java)
         return ResponseEntity.status(e.statusCode).body(erro)
     }
 

@@ -1,5 +1,6 @@
 package br.com.unip.autenticacao.repository
 
+import br.com.unip.autenticacao.dto.IPessoaDTO
 import br.com.unip.autenticacao.dto.PessoaFisicaDTO
 import br.com.unip.autenticacao.dto.PessoaJuridicaDTO
 import org.springframework.beans.factory.annotation.Value
@@ -21,19 +22,20 @@ class CadastroRepository(val restRepository: IRestRepository) : ICadastroReposit
     private val PESSOA_JURIDICA_URL = "v1/pessoa-juridica"
 
     override fun cadastrar(dto: PessoaFisicaDTO): String {
-        val headers = getHeaderComApiKey()
-        return restRepository.post("$CADASTRO_URL$PESSOA_FISICA_URL/cadastrar", dto, headers)
+        return this.cadastrar(dto, "$CADASTRO_URL$PESSOA_FISICA_URL/cadastrar")
     }
 
     override fun cadastrar(dto: PessoaJuridicaDTO): String {
-        val headers = getHeaderComApiKey()
-        return restRepository.post("$CADASTRO_URL$PESSOA_JURIDICA_URL/cadastrar", dto, headers)
+        return this.cadastrar(dto, "$CADASTRO_URL$PESSOA_JURIDICA_URL/cadastrar")
+    }
+
+    private fun cadastrar(dto: IPessoaDTO, uri: String): String {
+        return restRepository.post(uri, dto, this.getHeaderComApiKey())
     }
 
     private fun getHeaderComApiKey(): LinkedMultiValueMap<String, String> {
         val headers = LinkedMultiValueMap<String, String>()
         headers.add(APIKEY_TAG, APIKEY_AUTENTICACAO)
-
         return headers
     }
 }

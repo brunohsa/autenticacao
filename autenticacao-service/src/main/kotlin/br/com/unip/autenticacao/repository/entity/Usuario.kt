@@ -1,23 +1,13 @@
 package br.com.unip.autenticacao.repository.entity
 
 import br.com.unip.autenticacao.repository.entity.enums.ESituacaoUsuario
-import javax.persistence.Column
-import javax.persistence.Entity
-import javax.persistence.EnumType
-import javax.persistence.Enumerated
-import javax.persistence.FetchType
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
-import javax.persistence.JoinColumn
-import javax.persistence.JoinTable
-import javax.persistence.ManyToMany
+import jakarta.persistence.*
 
 @Entity
 class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null
 
     @Column(unique = true)

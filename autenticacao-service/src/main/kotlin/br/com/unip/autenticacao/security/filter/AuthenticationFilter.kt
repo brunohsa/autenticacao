@@ -1,6 +1,5 @@
 package br.com.unip.autenticacao.security.filter
 
-
 import br.com.unip.autenticacao.exception.ECodigoErro
 import br.com.unip.autenticacao.exception.ECodigoErro.TOKEN_EXPIRADO
 import br.com.unip.autenticacao.exception.ECodigoErro.TOKEN_INVALIDO
@@ -10,7 +9,11 @@ import br.com.unip.autenticacaolib.exception.TokenExpiradoException
 import br.com.unip.autenticacaolib.exception.TokenInvalidoException
 import br.com.unip.autenticacaolib.util.TokenUtil
 import com.fasterxml.jackson.databind.ObjectMapper
-import org.springframework.beans.factory.annotation.Value
+import jakarta.servlet.FilterChain
+import jakarta.servlet.ServletRequest
+import jakarta.servlet.ServletResponse
+import jakarta.servlet.http.HttpServletRequest
+import jakarta.servlet.http.HttpServletResponse
 import org.springframework.context.MessageSource
 import org.springframework.core.env.Environment
 import org.springframework.http.HttpStatus
@@ -20,12 +23,7 @@ import org.springframework.http.MediaType
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.web.filter.GenericFilterBean
 import java.io.IOException
-import java.util.Locale
-import javax.servlet.FilterChain
-import javax.servlet.ServletRequest
-import javax.servlet.ServletResponse
-import javax.servlet.http.HttpServletRequest
-import javax.servlet.http.HttpServletResponse
+import java.util.*
 
 class AuthenticationFilter(val messageSource: MessageSource, val env: Environment) : GenericFilterBean() {
 

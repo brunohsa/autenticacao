@@ -5,10 +5,10 @@ import br.com.unip.autenticacao.dto.PermissaoDTO
 import br.com.unip.autenticacao.dto.UsuarioDTO
 import br.com.unip.autenticacao.repository.entity.Usuario
 import br.com.unip.autenticacao.repository.entity.enums.ESituacaoUsuario
+import jakarta.persistence.EntityManager
+import jakarta.transaction.Transactional
 import org.springframework.stereotype.Repository
-import java.util.UUID
-import javax.persistence.EntityManager
-import javax.transaction.Transactional
+import java.util.*
 
 @Repository
 class UsuarioRepository(val em: EntityManager, val perfilRepository: IPerfilRepository) : IUsuarioRepository {
@@ -56,7 +56,7 @@ class UsuarioRepository(val em: EntityManager, val perfilRepository: IPerfilRepo
     }
 
     override fun buscarPermissoes(id: Long): List<PermissaoDTO> {
-        var sql = StringBuilder()
+        val sql = StringBuilder()
                 .append("SELECT new ${PermissaoDTO::class.qualifiedName}(p.id, p.nome) ")
                 .append("FROM Usuario u ")
                 .append("JOIN u.perfis perfis ")
@@ -64,14 +64,14 @@ class UsuarioRepository(val em: EntityManager, val perfilRepository: IPerfilRepo
                 .append("WHERE u.id =:id")
                 .toString()
 
-        var query = em.createQuery(sql)
+        val query = em.createQuery(sql)
         query.setParameter("id", id)
 
         return query.resultList as List<PermissaoDTO>
     }
 
     override fun buscarPermissoes(email: String): List<PermissaoDTO> {
-        var sql = StringBuilder()
+        val sql = StringBuilder()
                 .append("SELECT new ${PermissaoDTO::class.qualifiedName}(p.id, p.nome) ")
                 .append("FROM Usuario u ")
                 .append("JOIN u.perfis perfis ")
@@ -79,7 +79,7 @@ class UsuarioRepository(val em: EntityManager, val perfilRepository: IPerfilRepo
                 .append("WHERE u.email =:email")
                 .toString()
 
-        var query = em.createQuery(sql)
+        val query = em.createQuery(sql)
         query.setParameter("email", email)
 
         return query.resultList as List<PermissaoDTO>

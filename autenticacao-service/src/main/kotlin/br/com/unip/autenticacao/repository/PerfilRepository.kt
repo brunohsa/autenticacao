@@ -1,15 +1,15 @@
 package br.com.unip.autenticacao.repository
 
 import br.com.unip.autenticacao.repository.entity.Perfil
+import jakarta.persistence.EntityManager
+import jakarta.persistence.NoResultException
 import org.springframework.stereotype.Repository
-import javax.persistence.EntityManager
-import javax.persistence.NoResultException
 
 @Repository
 class PerfilRepository(val em: EntityManager) : IPerfilRepository {
 
     override fun buscarPorNome(nome: String): Perfil? {
-        var sql = StringBuilder()
+        val sql = StringBuilder()
                 .append("SELECT p FROM ${Perfil::class.qualifiedName} p")
                 .append("WHERE p.nome =:nome ")
                 .toString()
@@ -25,7 +25,7 @@ class PerfilRepository(val em: EntityManager) : IPerfilRepository {
     }
 
     override fun buscarPorNomes(nomes: List<String>): List<Perfil> {
-        var sql = StringBuilder()
+        val sql = StringBuilder()
                 .append("SELECT p FROM ${Perfil::class.qualifiedName} p ")
                 .append("WHERE p.nome in (:nomes) ")
                 .toString()

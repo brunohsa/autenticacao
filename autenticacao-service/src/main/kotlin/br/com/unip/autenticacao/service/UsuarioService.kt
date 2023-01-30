@@ -16,6 +16,7 @@ import br.com.unip.autenticacao.repository.IUsuarioRepository
 import br.com.unip.autenticacao.repository.entity.enums.EPerfis
 import br.com.unip.autenticacao.repository.entity.enums.ESituacaoUsuario.ATIVO
 import org.springframework.stereotype.Service
+import java.util.UUID
 
 @Service
 class UsuarioService(val usuarioRepository: IUsuarioRepository,
@@ -32,16 +33,12 @@ class UsuarioService(val usuarioRepository: IUsuarioRepository,
         cadastrarUsuario(usuario, perfis, true)
     }
 
-    override fun cadastrarUsuarioOAuth(usuario: UsuarioDTO) {
-        val perfis = EPerfis.perfisConsumidor()
-        cadastrarUsuario(usuario, perfis, false)
-    }
-
     private fun cadastrarUsuario(usuario: UsuarioDTO, perfis: List<String>, cadastrarNoFirebase: Boolean) {
         val usuarioDomain = UsuarioDomain(usuario.email, usuario.senha, ATIVO, perfis)
         validarSeUsuarioJaEstaCadastrado(usuarioDomain.email.get())
 
-        val uuid: String = this.cadastrarPessoa(usuario.pessoa)
+        //val uuid: String = this.cadastrarPessoa(usuario.pessoa)
+        val uuid: String = UUID.randomUUID().toString()
         usuarioRepository.criar(usuarioDomain, uuid)
 
         if (cadastrarNoFirebase) {
